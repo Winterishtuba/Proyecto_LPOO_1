@@ -19,3 +19,4 @@ C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\Debug\Tetris.vbproj.Cor
 C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\Debug\Tetris.exe
 C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\Debug\Tetris.xml
 C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\Debug\Tetris.pdb
+C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\Debug\Tetris.vbproj.AssemblyReference.cache
