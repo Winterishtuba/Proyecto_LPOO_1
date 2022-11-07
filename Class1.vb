@@ -8,6 +8,7 @@ Public Enum BlockRotation As Integer
 End Enum
 
 Public Enum BlockColor As Integer
+    None
     Red
     Blue
     Yellow
@@ -23,11 +24,12 @@ Public Enum BlockType As Integer
     SBlock
     ZBlock
     PlusBlock
+    BruhBlock
 End Enum
 Public Class GameGrid
-    Public grid(22, 10) As Integer
+    Public grid(20, 10) As Integer
     Public columns = 10
-    Public rows = 20
+    Public rows = 18
 
     Function inBounds(myPoint As Point) As Boolean
         Return (0 <= myPoint.X And myPoint.X <= columns) And (0 <= myPoint.Y And myPoint.Y <= rows)
@@ -181,6 +183,15 @@ Public Class Block
                         }
                 tileCount = 5
                 spawnOffset = New Point(0, 0)
+            Case BlockType.BruhBlock
+                tiles = {
+                            {New Point(0, 0), New Point(1, 0), New Point(2, 1), New Point(2, 2)},
+                            {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(2, 0)},
+                            {New Point(0, 0), New Point(0, 1), New Point(1, 2), New Point(2, 2)},
+                            {New Point(0, 2), New Point(1, 2), New Point(2, 0), New Point(2, 1)}
+                        }
+                tileCount = 4
+                spawnOffset = New Point(0, 0)
         End Select
         position.X = spawnPos.X + spawnOffset.X
         position.Y = spawnPos.Y + spawnOffset.Y
@@ -271,6 +282,15 @@ Public Class Block
                         }
                 tileCount = 5
                 spawnOffset = New Point(0, 0)
+            Case BlockType.BruhBlock
+                tiles = {
+                            {New Point(0, 0), New Point(1, 0), New Point(2, 1), New Point(2, 2)},
+                            {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(2, 0)},
+                            {New Point(0, 0), New Point(0, 1), New Point(1, 2), New Point(2, 2)},
+                            {New Point(0, 2), New Point(1, 2), New Point(2, 0), New Point(2, 1)}
+                        }
+                tileCount = 4
+                spawnOffset = New Point(0, 0)
         End Select
         position.X = spawnPos.X + spawnOffset.X
         position.Y = spawnPos.Y + spawnOffset.Y
@@ -328,6 +348,7 @@ End Class
 
 Class GameState
     Public currentBlock As Block
+    Public ghostBlock As Block
     Public grid As GameGrid
     Public queue As BlockQueue
     Public gameOver As Boolean = False
@@ -337,11 +358,12 @@ Class GameState
         queue = New BlockQueue()
         currentBlock = queue.nextBlock()
         grid = New GameGrid()
+        updateGhost()
     End Sub
 
     Function blockFits(block As Block) As Boolean
-        Dim listOftiles = block.getTiles()
-        For Each point As Point In listOftiles
+        Dim listOfTiles = block.getTiles()
+        For Each point As Point In listOfTiles
             If Not grid.isValidPos(point) Then
                 Return False
             End If
@@ -354,6 +376,7 @@ Class GameState
         If Not blockFits(currentBlock) Then
             currentBlock.rotateCounterClockwise()
         End If
+        updateGhost()
     End Sub
 
     Sub rotateCounterClockwise()
@@ -361,6 +384,7 @@ Class GameState
         If Not blockFits(currentBlock) Then
             currentBlock.rotateClockwise()
         End If
+        updateGhost()
     End Sub
 
     Sub moveLeft()
@@ -368,6 +392,7 @@ Class GameState
         If Not blockFits(currentBlock) Then
             currentBlock.move(New Point(0, 1))
         End If
+        updateGhost()
     End Sub
 
     Sub moveRight()
@@ -375,6 +400,7 @@ Class GameState
         If Not blockFits(currentBlock) Then
             currentBlock.move(New Point(0, -1))
         End If
+        updateGhost()
     End Sub
 
     Function isGameOver()
@@ -391,6 +417,7 @@ Class GameState
             gameOver = True
         Else
             currentBlock = queue.nextBlock()
+            updateGhost()
         End If
     End Sub
 
@@ -401,5 +428,30 @@ Class GameState
             placeBlock()
         End If
     End Sub
+
+    Sub jumpDown()
+        For i As Integer = 0 To (grid.rows - 1)
+            currentBlock.move(New Point(1, 0))
+            If Not blockFits(currentBlock) Then
+                currentBlock.move(New Point(-1, 0))
+                placeBlock()
+                Exit For
+            End If
+        Next
+    End Sub
+
+
+    Sub updateGhost()
+        ghostBlock = currentBlock
+        For i As Integer = 0 To (grid.rows - 1)
+            ghostBlock.move(New Point(1, 0))
+            If Not blockFits(ghostBlock) Then
+                ghostBlock.move(New Point(-1, 0))
+                Exit For
+            End If
+        Next
+    End Sub
+
+
 
 End Class
