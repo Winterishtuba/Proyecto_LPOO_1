@@ -22,7 +22,7 @@
 
     End Sub
 
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
+    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -72,11 +72,23 @@
         End Select
     End Sub
 
-    Private Sub TableLayoutPanel3_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel3.Paint
+    Private Sub TableLayoutPanel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub PictureBox205_Click(sender As Object, e As EventArgs) Handles PictureBox205.Click
 
     End Sub
 End Class

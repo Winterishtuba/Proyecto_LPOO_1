@@ -60,3 +60,16 @@ C:\Users\cazan\Desktop\Proyecto_tetris\Proyecto_Tetris\Proyecto_tetris\Proyecto_
 C:\Users\cazan\Desktop\Proyecto_tetris\Proyecto_Tetris\Proyecto_tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
 C:\Users\cazan\Desktop\Proyecto_tetris\Proyecto_Tetris\Proyecto_tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
 C:\Users\cazan\Desktop\Proyecto_tetris\Proyecto_Tetris\Proyecto_tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form3.resources
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\cazan\Desktop\Proyecto_verdadero\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
