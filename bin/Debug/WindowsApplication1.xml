@@ -22,17 +22,7 @@ WindowsApplication1
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.Backgroundmenu">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:WindowsApplication1.My.Resources.Resources.Backgroundmenu_resize_">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:WindowsApplication1.My.Resources.Resources.Title">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

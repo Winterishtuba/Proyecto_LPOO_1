@@ -29,7 +29,7 @@ End Enum
 Public Class GameGrid
     Public grid(20, 10) As Integer
     Public columns = 10
-    Public rows = 18
+    Public rows = 20
 
     Function inBounds(myPoint As Point) As Boolean
         Return (0 <= myPoint.X And myPoint.X <= columns) And (0 <= myPoint.Y And myPoint.Y <= rows)
@@ -109,7 +109,7 @@ Public Class Block
         Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock}
         Dim colorArray = {BlockColor.Red, BlockColor.Blue, BlockColor.Yellow, BlockColor.Purple}
         Me.type = typeArray(gen.Next(0, 8))
-        Me.color = colorArray(gen.Next(0, 4))
+        Me.color = colorArray(gen.Next(1, 4))
         Select Case type
             Case BlockType.IBlock
                 tiles = {
@@ -197,7 +197,7 @@ Public Class Block
         position.Y = spawnPos.Y + spawnOffset.Y
     End Sub
 
-    Sub New(type As BlockType)
+    Sub New(ByVal type As BlockType)
         rotation = 0
         'randomize
         Static Dim gen As System.Random = New System.Random()
@@ -207,7 +207,7 @@ Public Class Block
             Me.type = typeArray(gen.Next(0, 8))
         Loop While Me.type = type
 
-        Me.color = colorArray(gen.Next(0, 4))
+        Me.color = colorArray(gen.Next(1, 4))
         Me.type = type
         Select Case type
             Case BlockType.IBlock
@@ -316,7 +316,7 @@ Public Class Block
         rotation = rotation - 1
     End Sub
 
-    Sub move(myPoint As Point)
+    Sub move(ByVal myPoint As Point)
         position.X = position.X + myPoint.X
         position.Y = position.Y + myPoint.Y
     End Sub
@@ -325,7 +325,7 @@ End Class
 
 
 Class BlockQueue
-    Public queue As List(Of Block)
+    Public queue As New List(Of Block)
     Public lastType As BlockType
     Sub New()
         queue.Add(New Block())
