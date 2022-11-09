@@ -2,7 +2,7 @@
     Private Property Game As New GameState
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Game.grid.grid(4, 2) = 1
+        Game.grid.matrix(4, 2) = 1
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
         If myvar Is Nothing Then
             MsgBox("hola")
@@ -40,7 +40,7 @@
 
         For i As Integer = 0 To (Game.grid.rows - 1)
             For j As Integer = 0 To (Game.grid.columns - 1)
-                Dim color = Game.grid.grid(i, j)
+                Dim color = Game.grid.matrix(i, j)
                 If color = 0 Then
                     TryCast(TableLayoutPanel1.GetControlFromPosition(j, i), PictureBox).Image = Nothing
                     Continue For
@@ -62,33 +62,12 @@
         Select Case e.KeyData
             Case Keys.Right
                 Game.moveRight()
-                Dibujo()
             Case Keys.Left
                 Game.moveLeft()
-                Dibujo()
             Case Keys.Down
                 Game.moveDown()
-                Dibujo()
         End Select
+        Dibujo()
     End Sub
 
-    Private Sub TableLayoutPanel3_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub PictureBox205_Click(sender As Object, e As EventArgs) Handles PictureBox205.Click
-
-    End Sub
 End Class

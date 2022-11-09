@@ -8,8 +8,8 @@ Public Enum BlockRotation As Integer
 End Enum
 
 Public Enum BlockColor As Integer
-    None
-    Red
+    '0 is Nothing
+    Red = 1
     Blue
     Yellow
     Purple
@@ -27,27 +27,28 @@ Public Enum BlockType As Integer
     BruhBlock
 End Enum
 Public Class GameGrid
-    Public grid(20, 10) As Integer
+    Public matrix(20, 10) As Integer
     Public columns = 10
     Public rows = 20
 
     Function inBounds(myPoint As Point) As Boolean
-        Return (0 <= myPoint.X And myPoint.X <= columns) And (0 <= myPoint.Y And myPoint.Y <= rows)
+        Return (0 <= myPoint.X And myPoint.X < rows) And (0 <= myPoint.Y And myPoint.Y < columns)
     End Function
 
     Function isEmpty(myPoint As Point) As Boolean
-        Return grid(myPoint.X, myPoint.Y).Equals(0)
+        Return matrix(myPoint.X, myPoint.Y).Equals(0)
     End Function
 
     Function isValidPos(myPoint As Point) As Boolean
-        Return inBounds(myPoint) And isEmpty(myPoint)
+        If inBounds(myPoint) Then
+            Return isEmpty(myPoint)
+        End If
+        Return False
     End Function
 
     Function isRowEmpty(row As Integer) As Boolean
-        'Account for spawning area
-        row = row + 2
         For i As Integer = 0 To (columns - 1)
-            If Not grid(row, i).Equals(0) Then
+            If Not matrix(row, i).Equals(0) Then
                 Return False
             End If
         Next
@@ -55,9 +56,8 @@ Public Class GameGrid
     End Function
 
     Function isRowFull(row As Integer) As Boolean
-        row = row + 2
         For i As Integer = 0 To (columns - 1)
-            If grid(row, i).Equals(0) Then
+            If matrix(row, i).Equals(0) Then
                 Return False
             End If
         Next
@@ -65,9 +65,8 @@ Public Class GameGrid
     End Function
 
     Sub emptyRow(row As Integer)
-        row = row + 2
         For i As Integer = 0 To (columns - 1)
-            grid(row, i) = 0
+            matrix(row, i) = 0
         Next
         Return
     End Sub
@@ -81,7 +80,7 @@ Public Class GameGrid
                 clearedRows = clearedRows + 1
             Else
                 For i As Integer = 0 To (columns - 1)
-                    grid(curRow - clearedRows, i) = grid(curRow, i)
+                    matrix(curRow - clearedRows, i) = matrix(curRow, i)
                 Next
             End If
             curRow = curRow + 1
@@ -91,11 +90,10 @@ Public Class GameGrid
 End Class
 
 Public Class Block
-
-
+    'X is for rows, Y is for columns 
     Public spawnPos As New Point(0, 4)
     Public spawnOffset As Point
-    Public position As Point
+    Public position As New Point(0, 0)
     Public rotation As BlockRotation
     Public color As BlockColor
     Public tileCount As Integer
@@ -106,9 +104,9 @@ Public Class Block
         rotation = 0
         'randomize
         Static Dim gen As System.Random = New System.Random()
-        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock}
+        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock, BlockType.BruhBlock}
         Dim colorArray = {BlockColor.Red, BlockColor.Blue, BlockColor.Yellow, BlockColor.Purple}
-        Me.type = typeArray(gen.Next(0, 8))
+        Me.type = typeArray(gen.Next(0, 9))
         Me.color = colorArray(gen.Next(1, 4))
         Select Case type
             Case BlockType.IBlock
@@ -119,7 +117,7 @@ Public Class Block
                             {New Point(0, 1), New Point(1, 1), New Point(2, 1), New Point(3, 1)}
                            }
                 tileCount = 4
-                spawnOffset = New Point(0, -1)
+                spawnOffset = New Point(0, 1)
             Case BlockType.OBlock
                 tiles = {
                             {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)},
@@ -137,7 +135,7 @@ Public Class Block
                             {New Point(0, 1), New Point(1, 1), New Point(2, 0), New Point(2, 1)}
                         }
                 tileCount = 4
-                spawnOffset = New Point(1, 0)
+                spawnOffset = New Point(0, 0)
             Case BlockType.LBlock
                 tiles = {
                             {New Point(0, 2), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
@@ -146,7 +144,7 @@ Public Class Block
                             {New Point(0, 0), New Point(0, 1), New Point(1, 1), New Point(2, 1)}
                         }
                 tileCount = 4
-                spawnOffset = New Point(1, 0)
+                spawnOffset = New Point(0, 0)
             Case BlockType.SBlock
                 tiles = {
                             {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(1, 1)},
@@ -155,7 +153,7 @@ Public Class Block
                             {New Point(0, 0), New Point(1, 0), New Point(1, 1), New Point(2, 1)}
                         }
                 tileCount = 4
-                spawnOffset = New Point(1, 0)
+                spawnOffset = New Point(0, 0)
             Case BlockType.TBlock
                 tiles = {
                             {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
@@ -218,7 +216,7 @@ Public Class Block
                             {New Point(0, 1), New Point(1, 1), New Point(2, 1), New Point(3, 1)}
                            }
                 tileCount = 4
-                spawnOffset = New Point(0, -1)
+                spawnOffset = New Point(0, 1)
             Case BlockType.OBlock
                 tiles = {
                             {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)},
@@ -236,7 +234,7 @@ Public Class Block
                             {New Point(0, 1), New Point(1, 1), New Point(2, 0), New Point(2, 1)}
                         }
                 tileCount = 4
-                spawnOffset = New Point(1, 0)
+                spawnOffset = New Point(0, 0)
             Case BlockType.LBlock
                 tiles = {
                             {New Point(0, 2), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
@@ -245,7 +243,7 @@ Public Class Block
                             {New Point(0, 0), New Point(0, 1), New Point(1, 1), New Point(2, 1)}
                         }
                 tileCount = 4
-                spawnOffset = New Point(1, 0)
+                spawnOffset = New Point(0, 0)
             Case BlockType.SBlock
                 tiles = {
                             {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(1, 1)},
@@ -254,7 +252,7 @@ Public Class Block
                             {New Point(0, 0), New Point(1, 0), New Point(1, 1), New Point(2, 1)}
                         }
                 tileCount = 4
-                spawnOffset = New Point(1, 0)
+                spawnOffset = New Point(0, 0)
             Case BlockType.TBlock
                 tiles = {
                             {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
@@ -296,6 +294,17 @@ Public Class Block
         position.Y = spawnPos.Y + spawnOffset.Y
     End Sub
 
+    Sub New(ByRef source As Block)
+        Me.color = source.color
+        Me.position = New Point(source.position)
+        Me.rotation = source.rotation
+        Me.spawnOffset = New Point(source.spawnOffset)
+        Me.tileCount = source.tileCount
+        Me.spawnPos = New Point(source.spawnPos)
+        Me.type = source.type
+        'copying reference to read-only data
+        Me.tiles = source.tiles
+    End Sub
     Function getTiles() As List(Of Point)
         Dim list As New List(Of Point)
         For i As Integer = 0 To (tileCount - 1)
@@ -336,7 +345,7 @@ Class BlockQueue
         lastType = queue(2).type
     End Sub
     Function nextBlock() As Block
-        Dim temp As Block = queue(0)
+        Dim temp As New Block(queue(0))
         Dim block As New Block(lastType)
         lastType = block.type
         queue.RemoveAt(0)
@@ -410,7 +419,7 @@ Class GameState
     Sub placeBlock()
         Dim listOfPos = currentBlock.getTiles()
         For Each point As Point In listOfPos
-            grid.grid(point.X, point.Y) = currentBlock.color
+            grid.matrix(point.X, point.Y) = currentBlock.color
         Next
         grid.clearRows()
         If isGameOver() Then
@@ -442,7 +451,7 @@ Class GameState
 
 
     Sub updateGhost()
-        ghostBlock = currentBlock
+        ghostBlock = New Block(currentBlock)
         For i As Integer = 0 To (grid.rows - 1)
             ghostBlock.move(New Point(1, 0))
             If Not blockFits(ghostBlock) Then
