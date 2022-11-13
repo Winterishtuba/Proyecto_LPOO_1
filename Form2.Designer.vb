@@ -22,6 +22,7 @@ Partial Class Form2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -541,6 +542,7 @@ Partial Class Form2
         'TableLayoutPanel6
         '
         Me.TableLayoutPanel6.AccessibleRole = System.Windows.Forms.AccessibleRole.Outline
+        Me.TableLayoutPanel6.BackgroundImage = CType(resources.GetObject("TableLayoutPanel6.BackgroundImage"), System.Drawing.Image)
         Me.TableLayoutPanel6.ColumnCount = 1
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -999,6 +1001,7 @@ Partial Class Form2
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.BackgroundImage = CType(resources.GetObject("TableLayoutPanel1.BackgroundImage"), System.Drawing.Image)
         Me.TableLayoutPanel1.ColumnCount = 10
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
@@ -1010,6 +1013,7 @@ Partial Class Form2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox30, 9, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox237, 9, 19)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox236, 8, 19)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox235, 7, 19)
@@ -1180,7 +1184,6 @@ Partial Class Form2
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox33, 2, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox32, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox31, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox30, 9, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox29, 8, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox28, 7, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox27, 6, 2)
@@ -1238,6 +1241,7 @@ Partial Class Form2
         '
         'PictureBox237
         '
+        Me.PictureBox237.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox237.Location = New System.Drawing.Point(288, 608)
         Me.PictureBox237.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox237.Name = "PictureBox237"
@@ -1247,6 +1251,7 @@ Partial Class Form2
         '
         'PictureBox236
         '
+        Me.PictureBox236.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox236.Location = New System.Drawing.Point(256, 608)
         Me.PictureBox236.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox236.Name = "PictureBox236"
@@ -1256,6 +1261,7 @@ Partial Class Form2
         '
         'PictureBox235
         '
+        Me.PictureBox235.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox235.Location = New System.Drawing.Point(224, 608)
         Me.PictureBox235.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox235.Name = "PictureBox235"
@@ -1265,6 +1271,7 @@ Partial Class Form2
         '
         'PictureBox234
         '
+        Me.PictureBox234.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox234.Location = New System.Drawing.Point(192, 608)
         Me.PictureBox234.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox234.Name = "PictureBox234"
@@ -1274,6 +1281,7 @@ Partial Class Form2
         '
         'PictureBox233
         '
+        Me.PictureBox233.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox233.Location = New System.Drawing.Point(160, 608)
         Me.PictureBox233.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox233.Name = "PictureBox233"
@@ -1283,6 +1291,7 @@ Partial Class Form2
         '
         'PictureBox232
         '
+        Me.PictureBox232.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox232.Location = New System.Drawing.Point(128, 608)
         Me.PictureBox232.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox232.Name = "PictureBox232"
@@ -1292,6 +1301,7 @@ Partial Class Form2
         '
         'PictureBox231
         '
+        Me.PictureBox231.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox231.Location = New System.Drawing.Point(96, 608)
         Me.PictureBox231.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox231.Name = "PictureBox231"
@@ -1301,6 +1311,7 @@ Partial Class Form2
         '
         'PictureBox227
         '
+        Me.PictureBox227.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox227.Location = New System.Drawing.Point(64, 608)
         Me.PictureBox227.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox227.Name = "PictureBox227"
@@ -1310,6 +1321,7 @@ Partial Class Form2
         '
         'PictureBox223
         '
+        Me.PictureBox223.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox223.Location = New System.Drawing.Point(32, 608)
         Me.PictureBox223.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox223.Name = "PictureBox223"
@@ -1319,6 +1331,7 @@ Partial Class Form2
         '
         'PictureBox220
         '
+        Me.PictureBox220.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox220.Location = New System.Drawing.Point(0, 608)
         Me.PictureBox220.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox220.Name = "PictureBox220"
@@ -1328,6 +1341,7 @@ Partial Class Form2
         '
         'PictureBox190
         '
+        Me.PictureBox190.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox190.Location = New System.Drawing.Point(288, 576)
         Me.PictureBox190.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox190.Name = "PictureBox190"
@@ -1337,6 +1351,7 @@ Partial Class Form2
         '
         'PictureBox189
         '
+        Me.PictureBox189.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox189.Location = New System.Drawing.Point(256, 576)
         Me.PictureBox189.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox189.Name = "PictureBox189"
@@ -1346,6 +1361,7 @@ Partial Class Form2
         '
         'PictureBox188
         '
+        Me.PictureBox188.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox188.Location = New System.Drawing.Point(224, 576)
         Me.PictureBox188.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox188.Name = "PictureBox188"
@@ -1355,6 +1371,7 @@ Partial Class Form2
         '
         'PictureBox187
         '
+        Me.PictureBox187.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox187.Location = New System.Drawing.Point(192, 576)
         Me.PictureBox187.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox187.Name = "PictureBox187"
@@ -1364,6 +1381,7 @@ Partial Class Form2
         '
         'PictureBox186
         '
+        Me.PictureBox186.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox186.Location = New System.Drawing.Point(160, 576)
         Me.PictureBox186.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox186.Name = "PictureBox186"
@@ -1373,6 +1391,7 @@ Partial Class Form2
         '
         'PictureBox185
         '
+        Me.PictureBox185.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox185.Location = New System.Drawing.Point(128, 576)
         Me.PictureBox185.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox185.Name = "PictureBox185"
@@ -1382,6 +1401,7 @@ Partial Class Form2
         '
         'PictureBox184
         '
+        Me.PictureBox184.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox184.Location = New System.Drawing.Point(96, 576)
         Me.PictureBox184.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox184.Name = "PictureBox184"
@@ -1391,6 +1411,7 @@ Partial Class Form2
         '
         'PictureBox183
         '
+        Me.PictureBox183.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox183.Location = New System.Drawing.Point(64, 576)
         Me.PictureBox183.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox183.Name = "PictureBox183"
@@ -1400,6 +1421,7 @@ Partial Class Form2
         '
         'PictureBox182
         '
+        Me.PictureBox182.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox182.Location = New System.Drawing.Point(32, 576)
         Me.PictureBox182.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox182.Name = "PictureBox182"
@@ -1409,6 +1431,7 @@ Partial Class Form2
         '
         'PictureBox181
         '
+        Me.PictureBox181.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox181.Location = New System.Drawing.Point(0, 576)
         Me.PictureBox181.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox181.Name = "PictureBox181"
@@ -1418,6 +1441,7 @@ Partial Class Form2
         '
         'PictureBox180
         '
+        Me.PictureBox180.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox180.Location = New System.Drawing.Point(288, 544)
         Me.PictureBox180.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox180.Name = "PictureBox180"
@@ -1427,6 +1451,7 @@ Partial Class Form2
         '
         'PictureBox179
         '
+        Me.PictureBox179.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox179.Location = New System.Drawing.Point(256, 544)
         Me.PictureBox179.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox179.Name = "PictureBox179"
@@ -1436,6 +1461,7 @@ Partial Class Form2
         '
         'PictureBox178
         '
+        Me.PictureBox178.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox178.Location = New System.Drawing.Point(224, 544)
         Me.PictureBox178.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox178.Name = "PictureBox178"
@@ -1445,6 +1471,7 @@ Partial Class Form2
         '
         'PictureBox177
         '
+        Me.PictureBox177.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox177.Location = New System.Drawing.Point(192, 544)
         Me.PictureBox177.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox177.Name = "PictureBox177"
@@ -1454,6 +1481,7 @@ Partial Class Form2
         '
         'PictureBox176
         '
+        Me.PictureBox176.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox176.Location = New System.Drawing.Point(160, 544)
         Me.PictureBox176.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox176.Name = "PictureBox176"
@@ -1463,6 +1491,7 @@ Partial Class Form2
         '
         'PictureBox175
         '
+        Me.PictureBox175.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox175.Location = New System.Drawing.Point(128, 544)
         Me.PictureBox175.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox175.Name = "PictureBox175"
@@ -1472,6 +1501,7 @@ Partial Class Form2
         '
         'PictureBox174
         '
+        Me.PictureBox174.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox174.Location = New System.Drawing.Point(96, 544)
         Me.PictureBox174.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox174.Name = "PictureBox174"
@@ -1481,6 +1511,7 @@ Partial Class Form2
         '
         'PictureBox173
         '
+        Me.PictureBox173.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox173.Location = New System.Drawing.Point(64, 544)
         Me.PictureBox173.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox173.Name = "PictureBox173"
@@ -1490,6 +1521,7 @@ Partial Class Form2
         '
         'PictureBox172
         '
+        Me.PictureBox172.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox172.Location = New System.Drawing.Point(32, 544)
         Me.PictureBox172.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox172.Name = "PictureBox172"
@@ -1499,6 +1531,7 @@ Partial Class Form2
         '
         'PictureBox171
         '
+        Me.PictureBox171.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox171.Location = New System.Drawing.Point(0, 544)
         Me.PictureBox171.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox171.Name = "PictureBox171"
@@ -1508,6 +1541,7 @@ Partial Class Form2
         '
         'PictureBox170
         '
+        Me.PictureBox170.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox170.Location = New System.Drawing.Point(288, 512)
         Me.PictureBox170.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox170.Name = "PictureBox170"
@@ -1517,6 +1551,7 @@ Partial Class Form2
         '
         'PictureBox169
         '
+        Me.PictureBox169.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox169.Location = New System.Drawing.Point(256, 512)
         Me.PictureBox169.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox169.Name = "PictureBox169"
@@ -1526,6 +1561,7 @@ Partial Class Form2
         '
         'PictureBox168
         '
+        Me.PictureBox168.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox168.Location = New System.Drawing.Point(224, 512)
         Me.PictureBox168.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox168.Name = "PictureBox168"
@@ -1535,6 +1571,7 @@ Partial Class Form2
         '
         'PictureBox167
         '
+        Me.PictureBox167.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox167.Location = New System.Drawing.Point(192, 512)
         Me.PictureBox167.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox167.Name = "PictureBox167"
@@ -1544,6 +1581,7 @@ Partial Class Form2
         '
         'PictureBox166
         '
+        Me.PictureBox166.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox166.Location = New System.Drawing.Point(160, 512)
         Me.PictureBox166.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox166.Name = "PictureBox166"
@@ -1553,6 +1591,7 @@ Partial Class Form2
         '
         'PictureBox165
         '
+        Me.PictureBox165.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox165.Location = New System.Drawing.Point(128, 512)
         Me.PictureBox165.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox165.Name = "PictureBox165"
@@ -1562,6 +1601,7 @@ Partial Class Form2
         '
         'PictureBox164
         '
+        Me.PictureBox164.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox164.Location = New System.Drawing.Point(96, 512)
         Me.PictureBox164.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox164.Name = "PictureBox164"
@@ -1571,6 +1611,7 @@ Partial Class Form2
         '
         'PictureBox163
         '
+        Me.PictureBox163.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox163.Location = New System.Drawing.Point(64, 512)
         Me.PictureBox163.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox163.Name = "PictureBox163"
@@ -1580,6 +1621,7 @@ Partial Class Form2
         '
         'PictureBox162
         '
+        Me.PictureBox162.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox162.Location = New System.Drawing.Point(32, 512)
         Me.PictureBox162.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox162.Name = "PictureBox162"
@@ -1589,6 +1631,7 @@ Partial Class Form2
         '
         'PictureBox161
         '
+        Me.PictureBox161.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox161.Location = New System.Drawing.Point(0, 512)
         Me.PictureBox161.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox161.Name = "PictureBox161"
@@ -1598,6 +1641,7 @@ Partial Class Form2
         '
         'PictureBox160
         '
+        Me.PictureBox160.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox160.Location = New System.Drawing.Point(288, 480)
         Me.PictureBox160.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox160.Name = "PictureBox160"
@@ -1607,6 +1651,7 @@ Partial Class Form2
         '
         'PictureBox159
         '
+        Me.PictureBox159.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox159.Location = New System.Drawing.Point(256, 480)
         Me.PictureBox159.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox159.Name = "PictureBox159"
@@ -1616,6 +1661,7 @@ Partial Class Form2
         '
         'PictureBox158
         '
+        Me.PictureBox158.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox158.Location = New System.Drawing.Point(224, 480)
         Me.PictureBox158.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox158.Name = "PictureBox158"
@@ -1625,6 +1671,7 @@ Partial Class Form2
         '
         'PictureBox157
         '
+        Me.PictureBox157.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox157.Location = New System.Drawing.Point(192, 480)
         Me.PictureBox157.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox157.Name = "PictureBox157"
@@ -1634,6 +1681,7 @@ Partial Class Form2
         '
         'PictureBox156
         '
+        Me.PictureBox156.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox156.Location = New System.Drawing.Point(160, 480)
         Me.PictureBox156.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox156.Name = "PictureBox156"
@@ -1643,6 +1691,7 @@ Partial Class Form2
         '
         'PictureBox155
         '
+        Me.PictureBox155.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox155.Location = New System.Drawing.Point(128, 480)
         Me.PictureBox155.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox155.Name = "PictureBox155"
@@ -1652,6 +1701,7 @@ Partial Class Form2
         '
         'PictureBox154
         '
+        Me.PictureBox154.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox154.Location = New System.Drawing.Point(96, 480)
         Me.PictureBox154.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox154.Name = "PictureBox154"
@@ -1661,6 +1711,7 @@ Partial Class Form2
         '
         'PictureBox153
         '
+        Me.PictureBox153.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox153.Location = New System.Drawing.Point(64, 480)
         Me.PictureBox153.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox153.Name = "PictureBox153"
@@ -1670,6 +1721,7 @@ Partial Class Form2
         '
         'PictureBox152
         '
+        Me.PictureBox152.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox152.Location = New System.Drawing.Point(32, 480)
         Me.PictureBox152.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox152.Name = "PictureBox152"
@@ -1679,6 +1731,7 @@ Partial Class Form2
         '
         'PictureBox151
         '
+        Me.PictureBox151.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox151.Location = New System.Drawing.Point(0, 480)
         Me.PictureBox151.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox151.Name = "PictureBox151"
@@ -1688,6 +1741,7 @@ Partial Class Form2
         '
         'PictureBox150
         '
+        Me.PictureBox150.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox150.Location = New System.Drawing.Point(288, 448)
         Me.PictureBox150.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox150.Name = "PictureBox150"
@@ -1697,6 +1751,7 @@ Partial Class Form2
         '
         'PictureBox149
         '
+        Me.PictureBox149.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox149.Location = New System.Drawing.Point(256, 448)
         Me.PictureBox149.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox149.Name = "PictureBox149"
@@ -1706,6 +1761,7 @@ Partial Class Form2
         '
         'PictureBox148
         '
+        Me.PictureBox148.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox148.Location = New System.Drawing.Point(224, 448)
         Me.PictureBox148.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox148.Name = "PictureBox148"
@@ -1715,6 +1771,7 @@ Partial Class Form2
         '
         'PictureBox147
         '
+        Me.PictureBox147.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox147.Location = New System.Drawing.Point(192, 448)
         Me.PictureBox147.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox147.Name = "PictureBox147"
@@ -1724,6 +1781,7 @@ Partial Class Form2
         '
         'PictureBox146
         '
+        Me.PictureBox146.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox146.Location = New System.Drawing.Point(160, 448)
         Me.PictureBox146.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox146.Name = "PictureBox146"
@@ -1733,6 +1791,7 @@ Partial Class Form2
         '
         'PictureBox145
         '
+        Me.PictureBox145.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox145.Location = New System.Drawing.Point(128, 448)
         Me.PictureBox145.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox145.Name = "PictureBox145"
@@ -1742,6 +1801,7 @@ Partial Class Form2
         '
         'PictureBox144
         '
+        Me.PictureBox144.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox144.Location = New System.Drawing.Point(96, 448)
         Me.PictureBox144.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox144.Name = "PictureBox144"
@@ -1751,6 +1811,7 @@ Partial Class Form2
         '
         'PictureBox143
         '
+        Me.PictureBox143.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox143.Location = New System.Drawing.Point(64, 448)
         Me.PictureBox143.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox143.Name = "PictureBox143"
@@ -1760,6 +1821,7 @@ Partial Class Form2
         '
         'PictureBox142
         '
+        Me.PictureBox142.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox142.Location = New System.Drawing.Point(32, 448)
         Me.PictureBox142.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox142.Name = "PictureBox142"
@@ -1769,6 +1831,7 @@ Partial Class Form2
         '
         'PictureBox141
         '
+        Me.PictureBox141.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox141.Location = New System.Drawing.Point(0, 448)
         Me.PictureBox141.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox141.Name = "PictureBox141"
@@ -1778,6 +1841,7 @@ Partial Class Form2
         '
         'PictureBox140
         '
+        Me.PictureBox140.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox140.Location = New System.Drawing.Point(288, 416)
         Me.PictureBox140.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox140.Name = "PictureBox140"
@@ -1787,6 +1851,7 @@ Partial Class Form2
         '
         'PictureBox139
         '
+        Me.PictureBox139.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox139.Location = New System.Drawing.Point(256, 416)
         Me.PictureBox139.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox139.Name = "PictureBox139"
@@ -1796,6 +1861,7 @@ Partial Class Form2
         '
         'PictureBox138
         '
+        Me.PictureBox138.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox138.Location = New System.Drawing.Point(224, 416)
         Me.PictureBox138.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox138.Name = "PictureBox138"
@@ -1805,6 +1871,7 @@ Partial Class Form2
         '
         'PictureBox137
         '
+        Me.PictureBox137.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox137.Location = New System.Drawing.Point(192, 416)
         Me.PictureBox137.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox137.Name = "PictureBox137"
@@ -1814,6 +1881,7 @@ Partial Class Form2
         '
         'PictureBox136
         '
+        Me.PictureBox136.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox136.Location = New System.Drawing.Point(160, 416)
         Me.PictureBox136.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox136.Name = "PictureBox136"
@@ -1823,6 +1891,7 @@ Partial Class Form2
         '
         'PictureBox135
         '
+        Me.PictureBox135.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox135.Location = New System.Drawing.Point(128, 416)
         Me.PictureBox135.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox135.Name = "PictureBox135"
@@ -1832,6 +1901,7 @@ Partial Class Form2
         '
         'PictureBox134
         '
+        Me.PictureBox134.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox134.Location = New System.Drawing.Point(96, 416)
         Me.PictureBox134.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox134.Name = "PictureBox134"
@@ -1841,6 +1911,7 @@ Partial Class Form2
         '
         'PictureBox133
         '
+        Me.PictureBox133.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox133.Location = New System.Drawing.Point(64, 416)
         Me.PictureBox133.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox133.Name = "PictureBox133"
@@ -1850,6 +1921,7 @@ Partial Class Form2
         '
         'PictureBox132
         '
+        Me.PictureBox132.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox132.Location = New System.Drawing.Point(32, 416)
         Me.PictureBox132.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox132.Name = "PictureBox132"
@@ -1859,6 +1931,7 @@ Partial Class Form2
         '
         'PictureBox131
         '
+        Me.PictureBox131.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox131.Location = New System.Drawing.Point(0, 416)
         Me.PictureBox131.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox131.Name = "PictureBox131"
@@ -1868,6 +1941,7 @@ Partial Class Form2
         '
         'PictureBox130
         '
+        Me.PictureBox130.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox130.Location = New System.Drawing.Point(288, 384)
         Me.PictureBox130.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox130.Name = "PictureBox130"
@@ -1877,6 +1951,7 @@ Partial Class Form2
         '
         'PictureBox129
         '
+        Me.PictureBox129.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox129.Location = New System.Drawing.Point(256, 384)
         Me.PictureBox129.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox129.Name = "PictureBox129"
@@ -1886,6 +1961,7 @@ Partial Class Form2
         '
         'PictureBox128
         '
+        Me.PictureBox128.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox128.Location = New System.Drawing.Point(224, 384)
         Me.PictureBox128.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox128.Name = "PictureBox128"
@@ -1895,6 +1971,7 @@ Partial Class Form2
         '
         'PictureBox127
         '
+        Me.PictureBox127.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox127.Location = New System.Drawing.Point(192, 384)
         Me.PictureBox127.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox127.Name = "PictureBox127"
@@ -1904,6 +1981,7 @@ Partial Class Form2
         '
         'PictureBox126
         '
+        Me.PictureBox126.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox126.Location = New System.Drawing.Point(160, 384)
         Me.PictureBox126.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox126.Name = "PictureBox126"
@@ -1913,6 +1991,7 @@ Partial Class Form2
         '
         'PictureBox125
         '
+        Me.PictureBox125.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox125.Location = New System.Drawing.Point(128, 384)
         Me.PictureBox125.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox125.Name = "PictureBox125"
@@ -1922,6 +2001,7 @@ Partial Class Form2
         '
         'PictureBox124
         '
+        Me.PictureBox124.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox124.Location = New System.Drawing.Point(96, 384)
         Me.PictureBox124.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox124.Name = "PictureBox124"
@@ -1931,6 +2011,7 @@ Partial Class Form2
         '
         'PictureBox123
         '
+        Me.PictureBox123.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox123.Location = New System.Drawing.Point(64, 384)
         Me.PictureBox123.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox123.Name = "PictureBox123"
@@ -1940,6 +2021,7 @@ Partial Class Form2
         '
         'PictureBox122
         '
+        Me.PictureBox122.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox122.Location = New System.Drawing.Point(32, 384)
         Me.PictureBox122.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox122.Name = "PictureBox122"
@@ -1949,6 +2031,7 @@ Partial Class Form2
         '
         'PictureBox121
         '
+        Me.PictureBox121.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox121.Location = New System.Drawing.Point(0, 384)
         Me.PictureBox121.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox121.Name = "PictureBox121"
@@ -1958,6 +2041,7 @@ Partial Class Form2
         '
         'PictureBox120
         '
+        Me.PictureBox120.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox120.Location = New System.Drawing.Point(288, 352)
         Me.PictureBox120.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox120.Name = "PictureBox120"
@@ -1967,6 +2051,7 @@ Partial Class Form2
         '
         'PictureBox119
         '
+        Me.PictureBox119.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox119.Location = New System.Drawing.Point(256, 352)
         Me.PictureBox119.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox119.Name = "PictureBox119"
@@ -1976,6 +2061,7 @@ Partial Class Form2
         '
         'PictureBox118
         '
+        Me.PictureBox118.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox118.Location = New System.Drawing.Point(224, 352)
         Me.PictureBox118.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox118.Name = "PictureBox118"
@@ -1985,6 +2071,7 @@ Partial Class Form2
         '
         'PictureBox117
         '
+        Me.PictureBox117.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox117.Location = New System.Drawing.Point(192, 352)
         Me.PictureBox117.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox117.Name = "PictureBox117"
@@ -1994,6 +2081,7 @@ Partial Class Form2
         '
         'PictureBox116
         '
+        Me.PictureBox116.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox116.Location = New System.Drawing.Point(160, 352)
         Me.PictureBox116.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox116.Name = "PictureBox116"
@@ -2003,6 +2091,7 @@ Partial Class Form2
         '
         'PictureBox115
         '
+        Me.PictureBox115.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox115.Location = New System.Drawing.Point(128, 352)
         Me.PictureBox115.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox115.Name = "PictureBox115"
@@ -2012,6 +2101,7 @@ Partial Class Form2
         '
         'PictureBox114
         '
+        Me.PictureBox114.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox114.Location = New System.Drawing.Point(96, 352)
         Me.PictureBox114.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox114.Name = "PictureBox114"
@@ -2021,6 +2111,7 @@ Partial Class Form2
         '
         'PictureBox113
         '
+        Me.PictureBox113.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox113.Location = New System.Drawing.Point(64, 352)
         Me.PictureBox113.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox113.Name = "PictureBox113"
@@ -2030,6 +2121,7 @@ Partial Class Form2
         '
         'PictureBox112
         '
+        Me.PictureBox112.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox112.Location = New System.Drawing.Point(32, 352)
         Me.PictureBox112.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox112.Name = "PictureBox112"
@@ -2039,6 +2131,7 @@ Partial Class Form2
         '
         'PictureBox111
         '
+        Me.PictureBox111.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox111.Location = New System.Drawing.Point(0, 352)
         Me.PictureBox111.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox111.Name = "PictureBox111"
@@ -2048,6 +2141,7 @@ Partial Class Form2
         '
         'PictureBox110
         '
+        Me.PictureBox110.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox110.Location = New System.Drawing.Point(288, 320)
         Me.PictureBox110.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox110.Name = "PictureBox110"
@@ -2057,6 +2151,7 @@ Partial Class Form2
         '
         'PictureBox109
         '
+        Me.PictureBox109.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox109.Location = New System.Drawing.Point(256, 320)
         Me.PictureBox109.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox109.Name = "PictureBox109"
@@ -2066,6 +2161,7 @@ Partial Class Form2
         '
         'PictureBox108
         '
+        Me.PictureBox108.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox108.Location = New System.Drawing.Point(224, 320)
         Me.PictureBox108.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox108.Name = "PictureBox108"
@@ -2075,6 +2171,7 @@ Partial Class Form2
         '
         'PictureBox107
         '
+        Me.PictureBox107.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox107.Location = New System.Drawing.Point(192, 320)
         Me.PictureBox107.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox107.Name = "PictureBox107"
@@ -2084,6 +2181,7 @@ Partial Class Form2
         '
         'PictureBox106
         '
+        Me.PictureBox106.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox106.Location = New System.Drawing.Point(160, 320)
         Me.PictureBox106.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox106.Name = "PictureBox106"
@@ -2093,6 +2191,7 @@ Partial Class Form2
         '
         'PictureBox105
         '
+        Me.PictureBox105.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox105.Location = New System.Drawing.Point(128, 320)
         Me.PictureBox105.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox105.Name = "PictureBox105"
@@ -2102,6 +2201,7 @@ Partial Class Form2
         '
         'PictureBox104
         '
+        Me.PictureBox104.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox104.Location = New System.Drawing.Point(96, 320)
         Me.PictureBox104.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox104.Name = "PictureBox104"
@@ -2111,6 +2211,7 @@ Partial Class Form2
         '
         'PictureBox103
         '
+        Me.PictureBox103.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox103.Location = New System.Drawing.Point(64, 320)
         Me.PictureBox103.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox103.Name = "PictureBox103"
@@ -2120,6 +2221,7 @@ Partial Class Form2
         '
         'PictureBox102
         '
+        Me.PictureBox102.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox102.Location = New System.Drawing.Point(32, 320)
         Me.PictureBox102.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox102.Name = "PictureBox102"
@@ -2129,6 +2231,7 @@ Partial Class Form2
         '
         'PictureBox101
         '
+        Me.PictureBox101.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox101.Location = New System.Drawing.Point(0, 320)
         Me.PictureBox101.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox101.Name = "PictureBox101"
@@ -2138,6 +2241,7 @@ Partial Class Form2
         '
         'PictureBox100
         '
+        Me.PictureBox100.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox100.Location = New System.Drawing.Point(288, 288)
         Me.PictureBox100.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox100.Name = "PictureBox100"
@@ -2147,6 +2251,7 @@ Partial Class Form2
         '
         'PictureBox99
         '
+        Me.PictureBox99.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox99.Location = New System.Drawing.Point(256, 288)
         Me.PictureBox99.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox99.Name = "PictureBox99"
@@ -2156,6 +2261,7 @@ Partial Class Form2
         '
         'PictureBox98
         '
+        Me.PictureBox98.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox98.Location = New System.Drawing.Point(224, 288)
         Me.PictureBox98.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox98.Name = "PictureBox98"
@@ -2165,6 +2271,7 @@ Partial Class Form2
         '
         'PictureBox97
         '
+        Me.PictureBox97.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox97.Location = New System.Drawing.Point(192, 288)
         Me.PictureBox97.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox97.Name = "PictureBox97"
@@ -2174,6 +2281,7 @@ Partial Class Form2
         '
         'PictureBox96
         '
+        Me.PictureBox96.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox96.Location = New System.Drawing.Point(160, 288)
         Me.PictureBox96.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox96.Name = "PictureBox96"
@@ -2183,6 +2291,7 @@ Partial Class Form2
         '
         'PictureBox95
         '
+        Me.PictureBox95.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox95.Location = New System.Drawing.Point(128, 288)
         Me.PictureBox95.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox95.Name = "PictureBox95"
@@ -2192,6 +2301,7 @@ Partial Class Form2
         '
         'PictureBox94
         '
+        Me.PictureBox94.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox94.Location = New System.Drawing.Point(96, 288)
         Me.PictureBox94.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox94.Name = "PictureBox94"
@@ -2201,6 +2311,7 @@ Partial Class Form2
         '
         'PictureBox93
         '
+        Me.PictureBox93.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox93.Location = New System.Drawing.Point(64, 288)
         Me.PictureBox93.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox93.Name = "PictureBox93"
@@ -2210,6 +2321,7 @@ Partial Class Form2
         '
         'PictureBox92
         '
+        Me.PictureBox92.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox92.Location = New System.Drawing.Point(32, 288)
         Me.PictureBox92.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox92.Name = "PictureBox92"
@@ -2219,6 +2331,7 @@ Partial Class Form2
         '
         'PictureBox91
         '
+        Me.PictureBox91.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox91.Location = New System.Drawing.Point(0, 288)
         Me.PictureBox91.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox91.Name = "PictureBox91"
@@ -2228,6 +2341,7 @@ Partial Class Form2
         '
         'PictureBox90
         '
+        Me.PictureBox90.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox90.Location = New System.Drawing.Point(288, 256)
         Me.PictureBox90.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox90.Name = "PictureBox90"
@@ -2237,6 +2351,7 @@ Partial Class Form2
         '
         'PictureBox89
         '
+        Me.PictureBox89.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox89.Location = New System.Drawing.Point(256, 256)
         Me.PictureBox89.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox89.Name = "PictureBox89"
@@ -2246,6 +2361,7 @@ Partial Class Form2
         '
         'PictureBox88
         '
+        Me.PictureBox88.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox88.Location = New System.Drawing.Point(224, 256)
         Me.PictureBox88.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox88.Name = "PictureBox88"
@@ -2255,6 +2371,7 @@ Partial Class Form2
         '
         'PictureBox87
         '
+        Me.PictureBox87.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox87.Location = New System.Drawing.Point(192, 256)
         Me.PictureBox87.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox87.Name = "PictureBox87"
@@ -2264,6 +2381,7 @@ Partial Class Form2
         '
         'PictureBox86
         '
+        Me.PictureBox86.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox86.Location = New System.Drawing.Point(160, 256)
         Me.PictureBox86.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox86.Name = "PictureBox86"
@@ -2273,6 +2391,7 @@ Partial Class Form2
         '
         'PictureBox85
         '
+        Me.PictureBox85.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox85.Location = New System.Drawing.Point(128, 256)
         Me.PictureBox85.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox85.Name = "PictureBox85"
@@ -2282,6 +2401,7 @@ Partial Class Form2
         '
         'PictureBox84
         '
+        Me.PictureBox84.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox84.Location = New System.Drawing.Point(96, 256)
         Me.PictureBox84.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox84.Name = "PictureBox84"
@@ -2291,6 +2411,7 @@ Partial Class Form2
         '
         'PictureBox83
         '
+        Me.PictureBox83.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox83.Location = New System.Drawing.Point(64, 256)
         Me.PictureBox83.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox83.Name = "PictureBox83"
@@ -2300,6 +2421,7 @@ Partial Class Form2
         '
         'PictureBox82
         '
+        Me.PictureBox82.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox82.Location = New System.Drawing.Point(32, 256)
         Me.PictureBox82.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox82.Name = "PictureBox82"
@@ -2309,6 +2431,7 @@ Partial Class Form2
         '
         'PictureBox81
         '
+        Me.PictureBox81.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox81.Location = New System.Drawing.Point(0, 256)
         Me.PictureBox81.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox81.Name = "PictureBox81"
@@ -2318,6 +2441,7 @@ Partial Class Form2
         '
         'PictureBox80
         '
+        Me.PictureBox80.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox80.Location = New System.Drawing.Point(288, 224)
         Me.PictureBox80.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox80.Name = "PictureBox80"
@@ -2327,6 +2451,7 @@ Partial Class Form2
         '
         'PictureBox79
         '
+        Me.PictureBox79.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox79.Location = New System.Drawing.Point(256, 224)
         Me.PictureBox79.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox79.Name = "PictureBox79"
@@ -2336,6 +2461,7 @@ Partial Class Form2
         '
         'PictureBox78
         '
+        Me.PictureBox78.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox78.Location = New System.Drawing.Point(224, 224)
         Me.PictureBox78.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox78.Name = "PictureBox78"
@@ -2345,6 +2471,7 @@ Partial Class Form2
         '
         'PictureBox77
         '
+        Me.PictureBox77.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox77.Location = New System.Drawing.Point(192, 224)
         Me.PictureBox77.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox77.Name = "PictureBox77"
@@ -2354,6 +2481,7 @@ Partial Class Form2
         '
         'PictureBox76
         '
+        Me.PictureBox76.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox76.Location = New System.Drawing.Point(160, 224)
         Me.PictureBox76.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox76.Name = "PictureBox76"
@@ -2363,6 +2491,7 @@ Partial Class Form2
         '
         'PictureBox75
         '
+        Me.PictureBox75.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox75.Location = New System.Drawing.Point(128, 224)
         Me.PictureBox75.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox75.Name = "PictureBox75"
@@ -2372,6 +2501,7 @@ Partial Class Form2
         '
         'PictureBox74
         '
+        Me.PictureBox74.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox74.Location = New System.Drawing.Point(96, 224)
         Me.PictureBox74.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox74.Name = "PictureBox74"
@@ -2381,6 +2511,7 @@ Partial Class Form2
         '
         'PictureBox73
         '
+        Me.PictureBox73.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox73.Location = New System.Drawing.Point(64, 224)
         Me.PictureBox73.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox73.Name = "PictureBox73"
@@ -2390,6 +2521,7 @@ Partial Class Form2
         '
         'PictureBox72
         '
+        Me.PictureBox72.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox72.Location = New System.Drawing.Point(32, 224)
         Me.PictureBox72.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox72.Name = "PictureBox72"
@@ -2399,6 +2531,7 @@ Partial Class Form2
         '
         'PictureBox71
         '
+        Me.PictureBox71.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox71.Location = New System.Drawing.Point(0, 224)
         Me.PictureBox71.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox71.Name = "PictureBox71"
@@ -2408,6 +2541,7 @@ Partial Class Form2
         '
         'PictureBox70
         '
+        Me.PictureBox70.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox70.Location = New System.Drawing.Point(288, 192)
         Me.PictureBox70.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox70.Name = "PictureBox70"
@@ -2417,6 +2551,7 @@ Partial Class Form2
         '
         'PictureBox69
         '
+        Me.PictureBox69.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox69.Location = New System.Drawing.Point(256, 192)
         Me.PictureBox69.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox69.Name = "PictureBox69"
@@ -2426,6 +2561,7 @@ Partial Class Form2
         '
         'PictureBox68
         '
+        Me.PictureBox68.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox68.Location = New System.Drawing.Point(224, 192)
         Me.PictureBox68.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox68.Name = "PictureBox68"
@@ -2435,6 +2571,7 @@ Partial Class Form2
         '
         'PictureBox67
         '
+        Me.PictureBox67.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox67.Location = New System.Drawing.Point(192, 192)
         Me.PictureBox67.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox67.Name = "PictureBox67"
@@ -2444,6 +2581,7 @@ Partial Class Form2
         '
         'PictureBox66
         '
+        Me.PictureBox66.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox66.Location = New System.Drawing.Point(160, 192)
         Me.PictureBox66.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox66.Name = "PictureBox66"
@@ -2453,6 +2591,7 @@ Partial Class Form2
         '
         'PictureBox65
         '
+        Me.PictureBox65.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox65.Location = New System.Drawing.Point(128, 192)
         Me.PictureBox65.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox65.Name = "PictureBox65"
@@ -2462,6 +2601,7 @@ Partial Class Form2
         '
         'PictureBox64
         '
+        Me.PictureBox64.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox64.Location = New System.Drawing.Point(96, 192)
         Me.PictureBox64.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox64.Name = "PictureBox64"
@@ -2471,6 +2611,7 @@ Partial Class Form2
         '
         'PictureBox63
         '
+        Me.PictureBox63.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox63.Location = New System.Drawing.Point(64, 192)
         Me.PictureBox63.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox63.Name = "PictureBox63"
@@ -2480,6 +2621,7 @@ Partial Class Form2
         '
         'PictureBox62
         '
+        Me.PictureBox62.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox62.Location = New System.Drawing.Point(32, 192)
         Me.PictureBox62.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox62.Name = "PictureBox62"
@@ -2489,6 +2631,7 @@ Partial Class Form2
         '
         'PictureBox61
         '
+        Me.PictureBox61.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox61.Location = New System.Drawing.Point(0, 192)
         Me.PictureBox61.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox61.Name = "PictureBox61"
@@ -2498,6 +2641,7 @@ Partial Class Form2
         '
         'PictureBox60
         '
+        Me.PictureBox60.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox60.Location = New System.Drawing.Point(288, 160)
         Me.PictureBox60.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox60.Name = "PictureBox60"
@@ -2507,6 +2651,7 @@ Partial Class Form2
         '
         'PictureBox59
         '
+        Me.PictureBox59.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox59.Location = New System.Drawing.Point(256, 160)
         Me.PictureBox59.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox59.Name = "PictureBox59"
@@ -2516,6 +2661,7 @@ Partial Class Form2
         '
         'PictureBox58
         '
+        Me.PictureBox58.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox58.Location = New System.Drawing.Point(224, 160)
         Me.PictureBox58.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox58.Name = "PictureBox58"
@@ -2525,6 +2671,7 @@ Partial Class Form2
         '
         'PictureBox57
         '
+        Me.PictureBox57.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox57.Location = New System.Drawing.Point(192, 160)
         Me.PictureBox57.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox57.Name = "PictureBox57"
@@ -2534,6 +2681,7 @@ Partial Class Form2
         '
         'PictureBox56
         '
+        Me.PictureBox56.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox56.Location = New System.Drawing.Point(160, 160)
         Me.PictureBox56.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox56.Name = "PictureBox56"
@@ -2543,6 +2691,7 @@ Partial Class Form2
         '
         'PictureBox55
         '
+        Me.PictureBox55.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox55.Location = New System.Drawing.Point(128, 160)
         Me.PictureBox55.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox55.Name = "PictureBox55"
@@ -2552,6 +2701,7 @@ Partial Class Form2
         '
         'PictureBox54
         '
+        Me.PictureBox54.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox54.Location = New System.Drawing.Point(96, 160)
         Me.PictureBox54.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox54.Name = "PictureBox54"
@@ -2561,6 +2711,7 @@ Partial Class Form2
         '
         'PictureBox53
         '
+        Me.PictureBox53.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox53.Location = New System.Drawing.Point(64, 160)
         Me.PictureBox53.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox53.Name = "PictureBox53"
@@ -2570,6 +2721,7 @@ Partial Class Form2
         '
         'PictureBox52
         '
+        Me.PictureBox52.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox52.Location = New System.Drawing.Point(32, 160)
         Me.PictureBox52.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox52.Name = "PictureBox52"
@@ -2579,6 +2731,7 @@ Partial Class Form2
         '
         'PictureBox51
         '
+        Me.PictureBox51.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox51.Location = New System.Drawing.Point(0, 160)
         Me.PictureBox51.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox51.Name = "PictureBox51"
@@ -2588,6 +2741,7 @@ Partial Class Form2
         '
         'PictureBox50
         '
+        Me.PictureBox50.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox50.Location = New System.Drawing.Point(288, 128)
         Me.PictureBox50.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox50.Name = "PictureBox50"
@@ -2597,6 +2751,7 @@ Partial Class Form2
         '
         'PictureBox49
         '
+        Me.PictureBox49.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox49.Location = New System.Drawing.Point(256, 128)
         Me.PictureBox49.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox49.Name = "PictureBox49"
@@ -2606,6 +2761,7 @@ Partial Class Form2
         '
         'PictureBox48
         '
+        Me.PictureBox48.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox48.Location = New System.Drawing.Point(224, 128)
         Me.PictureBox48.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox48.Name = "PictureBox48"
@@ -2615,6 +2771,7 @@ Partial Class Form2
         '
         'PictureBox47
         '
+        Me.PictureBox47.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox47.Location = New System.Drawing.Point(192, 128)
         Me.PictureBox47.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox47.Name = "PictureBox47"
@@ -2624,6 +2781,7 @@ Partial Class Form2
         '
         'PictureBox46
         '
+        Me.PictureBox46.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox46.Location = New System.Drawing.Point(160, 128)
         Me.PictureBox46.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox46.Name = "PictureBox46"
@@ -2633,6 +2791,7 @@ Partial Class Form2
         '
         'PictureBox45
         '
+        Me.PictureBox45.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox45.Location = New System.Drawing.Point(128, 128)
         Me.PictureBox45.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox45.Name = "PictureBox45"
@@ -2642,6 +2801,7 @@ Partial Class Form2
         '
         'PictureBox44
         '
+        Me.PictureBox44.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox44.Location = New System.Drawing.Point(96, 128)
         Me.PictureBox44.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox44.Name = "PictureBox44"
@@ -2651,6 +2811,7 @@ Partial Class Form2
         '
         'PictureBox43
         '
+        Me.PictureBox43.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox43.Location = New System.Drawing.Point(64, 128)
         Me.PictureBox43.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox43.Name = "PictureBox43"
@@ -2660,6 +2821,7 @@ Partial Class Form2
         '
         'PictureBox42
         '
+        Me.PictureBox42.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox42.Location = New System.Drawing.Point(32, 128)
         Me.PictureBox42.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox42.Name = "PictureBox42"
@@ -2669,6 +2831,7 @@ Partial Class Form2
         '
         'PictureBox41
         '
+        Me.PictureBox41.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox41.Location = New System.Drawing.Point(0, 128)
         Me.PictureBox41.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox41.Name = "PictureBox41"
@@ -2678,6 +2841,7 @@ Partial Class Form2
         '
         'PictureBox40
         '
+        Me.PictureBox40.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox40.Location = New System.Drawing.Point(288, 96)
         Me.PictureBox40.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox40.Name = "PictureBox40"
@@ -2687,6 +2851,7 @@ Partial Class Form2
         '
         'PictureBox39
         '
+        Me.PictureBox39.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox39.Location = New System.Drawing.Point(256, 96)
         Me.PictureBox39.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox39.Name = "PictureBox39"
@@ -2696,6 +2861,7 @@ Partial Class Form2
         '
         'PictureBox38
         '
+        Me.PictureBox38.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox38.Location = New System.Drawing.Point(224, 96)
         Me.PictureBox38.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox38.Name = "PictureBox38"
@@ -2705,6 +2871,7 @@ Partial Class Form2
         '
         'PictureBox37
         '
+        Me.PictureBox37.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox37.Location = New System.Drawing.Point(192, 96)
         Me.PictureBox37.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox37.Name = "PictureBox37"
@@ -2714,6 +2881,7 @@ Partial Class Form2
         '
         'PictureBox36
         '
+        Me.PictureBox36.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox36.Location = New System.Drawing.Point(160, 96)
         Me.PictureBox36.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox36.Name = "PictureBox36"
@@ -2723,6 +2891,7 @@ Partial Class Form2
         '
         'PictureBox35
         '
+        Me.PictureBox35.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox35.Location = New System.Drawing.Point(128, 96)
         Me.PictureBox35.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox35.Name = "PictureBox35"
@@ -2732,6 +2901,7 @@ Partial Class Form2
         '
         'PictureBox34
         '
+        Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox34.Location = New System.Drawing.Point(96, 96)
         Me.PictureBox34.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox34.Name = "PictureBox34"
@@ -2741,6 +2911,7 @@ Partial Class Form2
         '
         'PictureBox33
         '
+        Me.PictureBox33.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox33.Location = New System.Drawing.Point(64, 96)
         Me.PictureBox33.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox33.Name = "PictureBox33"
@@ -2750,6 +2921,7 @@ Partial Class Form2
         '
         'PictureBox32
         '
+        Me.PictureBox32.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox32.Location = New System.Drawing.Point(32, 96)
         Me.PictureBox32.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox32.Name = "PictureBox32"
@@ -2759,6 +2931,7 @@ Partial Class Form2
         '
         'PictureBox31
         '
+        Me.PictureBox31.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox31.Location = New System.Drawing.Point(0, 96)
         Me.PictureBox31.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox31.Name = "PictureBox31"
@@ -2768,6 +2941,7 @@ Partial Class Form2
         '
         'PictureBox30
         '
+        Me.PictureBox30.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox30.Location = New System.Drawing.Point(288, 64)
         Me.PictureBox30.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox30.Name = "PictureBox30"
@@ -2777,6 +2951,7 @@ Partial Class Form2
         '
         'PictureBox29
         '
+        Me.PictureBox29.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox29.Location = New System.Drawing.Point(256, 64)
         Me.PictureBox29.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox29.Name = "PictureBox29"
@@ -2786,6 +2961,7 @@ Partial Class Form2
         '
         'PictureBox28
         '
+        Me.PictureBox28.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox28.Location = New System.Drawing.Point(224, 64)
         Me.PictureBox28.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox28.Name = "PictureBox28"
@@ -2795,6 +2971,7 @@ Partial Class Form2
         '
         'PictureBox27
         '
+        Me.PictureBox27.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox27.Location = New System.Drawing.Point(192, 64)
         Me.PictureBox27.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox27.Name = "PictureBox27"
@@ -2804,6 +2981,7 @@ Partial Class Form2
         '
         'PictureBox26
         '
+        Me.PictureBox26.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox26.Location = New System.Drawing.Point(160, 64)
         Me.PictureBox26.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox26.Name = "PictureBox26"
@@ -2813,6 +2991,7 @@ Partial Class Form2
         '
         'PictureBox25
         '
+        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox25.Location = New System.Drawing.Point(128, 64)
         Me.PictureBox25.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox25.Name = "PictureBox25"
@@ -2822,6 +3001,7 @@ Partial Class Form2
         '
         'PictureBox24
         '
+        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox24.Location = New System.Drawing.Point(96, 64)
         Me.PictureBox24.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox24.Name = "PictureBox24"
@@ -2831,6 +3011,7 @@ Partial Class Form2
         '
         'PictureBox23
         '
+        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox23.Location = New System.Drawing.Point(64, 64)
         Me.PictureBox23.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox23.Name = "PictureBox23"
@@ -2840,6 +3021,7 @@ Partial Class Form2
         '
         'PictureBox22
         '
+        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox22.Location = New System.Drawing.Point(32, 64)
         Me.PictureBox22.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox22.Name = "PictureBox22"
@@ -2849,6 +3031,7 @@ Partial Class Form2
         '
         'PictureBox21
         '
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox21.Location = New System.Drawing.Point(0, 64)
         Me.PictureBox21.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox21.Name = "PictureBox21"
