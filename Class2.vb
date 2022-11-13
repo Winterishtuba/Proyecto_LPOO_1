@@ -1,5 +1,4 @@
 ﻿Imports Microsoft.VisualBasic.Devices
-
 Public Enum BlockRotation As Integer
     deg0
     deg90
@@ -30,6 +29,7 @@ Public Class GameGrid
     Public matrix(20, 10) As Integer
     Public columns = 10
     Public rows = 20
+    Public level As Integer
 
     Function inBounds(myPoint As Point) As Boolean
         Return (0 <= myPoint.X And myPoint.X < rows) And (0 <= myPoint.Y And myPoint.Y < columns)
@@ -85,6 +85,9 @@ Public Class GameGrid
             End If
             curRow = curRow + 1
         End While
+        If clearedRows Mod 10 = 0 Then
+            level = level + 1
+        End If
     End Sub
 
 End Class

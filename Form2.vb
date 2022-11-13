@@ -1,12 +1,17 @@
-﻿Public Class Form2
+﻿Imports System.Timers
+Public Class Form2
     Private Property Game As New GameState
-
+    Private Sub TimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
+        Game.moveDown()
+        Dibujo()
+    End Sub
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Game.grid.matrix(4, 2) = 1
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
-        If myvar Is Nothing Then
-            MsgBox("hola")
-        End If
+        Dim timer As Timer = New Timer()
+        timer.Interval = (1000 - Game.grid.level * 40 + 40)
+        AddHandler timer.Elapsed, AddressOf TimerEvent
+        timer.AutoReset = True
+        timer.Enabled = True
         Dibujo()
     End Sub
 

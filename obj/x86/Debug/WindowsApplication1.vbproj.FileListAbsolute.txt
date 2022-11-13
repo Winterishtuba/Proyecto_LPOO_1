@@ -86,3 +86,16 @@ C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\x86\Debug\WindowsApplic
 C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\x86\Debug\WindowsApplication1.exe
 C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\x86\Debug\WindowsApplication1.xml
 C:\Users\Casa\Desktop\Development\vb-projects\Tetris\obj\x86\Debug\WindowsApplication1.pdb
+D:\tetris\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
+D:\tetris\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
+D:\tetris\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form2.resources
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form3.resources
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
