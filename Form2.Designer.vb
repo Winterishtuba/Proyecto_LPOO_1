@@ -27,8 +27,44 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox230 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox229 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox228 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox226 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox225 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox224 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox222 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox221 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox219 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox215 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox211 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox208 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox195 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox218 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox217 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox216 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox214 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox213 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox212 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox210 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox209 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox206 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox199 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox207 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox204 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox203 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox202 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox201 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox198 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox197 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox196 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox194 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox193 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox192 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox191 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox205 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
@@ -231,46 +267,46 @@ Partial Class Form2
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox204 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox203 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox202 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox201 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox198 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox197 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox196 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox194 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox193 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox192 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox191 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox205 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox218 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox217 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox216 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox214 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox213 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox212 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox210 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox209 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox206 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox199 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox207 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox230 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox229 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox228 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox226 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox225 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox224 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox222 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox221 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox219 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox215 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox211 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox208 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox195 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox200 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel5.SuspendLayout()
+        CType(Me.PictureBox230, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox229, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox228, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox226, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox225, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox224, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox222, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox221, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox219, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox215, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox211, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox208, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox195, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
+        CType(Me.PictureBox218, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox217, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox216, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox214, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox213, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox212, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox210, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox209, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox206, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox199, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox207, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.PictureBox204, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox203, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox202, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox201, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox198, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox197, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox196, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox194, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox193, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox192, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox191, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox205, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox237, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -472,43 +508,6 @@ Partial Class Form2
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox204, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox203, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox202, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox201, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox198, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox197, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox196, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox194, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox193, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox192, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox191, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox205, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox218, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox217, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox216, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox214, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox213, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox212, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox210, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox209, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox206, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox199, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox207, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox230, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox229, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox228, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox226, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox225, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox224, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox222, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox221, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox219, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox215, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox211, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox208, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox195, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox200, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -589,6 +588,123 @@ Partial Class Form2
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(98, 125)
         Me.TableLayoutPanel5.TabIndex = 16
         '
+        'PictureBox230
+        '
+        Me.PictureBox230.Location = New System.Drawing.Point(64, 96)
+        Me.PictureBox230.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox230.Name = "PictureBox230"
+        Me.PictureBox230.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox230.TabIndex = 115
+        Me.PictureBox230.TabStop = False
+        '
+        'PictureBox229
+        '
+        Me.PictureBox229.Location = New System.Drawing.Point(32, 96)
+        Me.PictureBox229.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox229.Name = "PictureBox229"
+        Me.PictureBox229.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox229.TabIndex = 114
+        Me.PictureBox229.TabStop = False
+        '
+        'PictureBox228
+        '
+        Me.PictureBox228.Location = New System.Drawing.Point(0, 96)
+        Me.PictureBox228.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox228.Name = "PictureBox228"
+        Me.PictureBox228.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox228.TabIndex = 113
+        Me.PictureBox228.TabStop = False
+        '
+        'PictureBox226
+        '
+        Me.PictureBox226.Location = New System.Drawing.Point(64, 64)
+        Me.PictureBox226.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox226.Name = "PictureBox226"
+        Me.PictureBox226.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox226.TabIndex = 111
+        Me.PictureBox226.TabStop = False
+        '
+        'PictureBox225
+        '
+        Me.PictureBox225.Location = New System.Drawing.Point(32, 64)
+        Me.PictureBox225.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox225.Name = "PictureBox225"
+        Me.PictureBox225.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox225.TabIndex = 110
+        Me.PictureBox225.TabStop = False
+        '
+        'PictureBox224
+        '
+        Me.PictureBox224.Location = New System.Drawing.Point(0, 64)
+        Me.PictureBox224.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox224.Name = "PictureBox224"
+        Me.PictureBox224.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox224.TabIndex = 109
+        Me.PictureBox224.TabStop = False
+        '
+        'PictureBox222
+        '
+        Me.PictureBox222.Location = New System.Drawing.Point(64, 32)
+        Me.PictureBox222.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox222.Name = "PictureBox222"
+        Me.PictureBox222.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox222.TabIndex = 107
+        Me.PictureBox222.TabStop = False
+        '
+        'PictureBox221
+        '
+        Me.PictureBox221.Location = New System.Drawing.Point(32, 32)
+        Me.PictureBox221.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox221.Name = "PictureBox221"
+        Me.PictureBox221.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox221.TabIndex = 106
+        Me.PictureBox221.TabStop = False
+        '
+        'PictureBox219
+        '
+        Me.PictureBox219.Location = New System.Drawing.Point(64, 0)
+        Me.PictureBox219.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox219.Name = "PictureBox219"
+        Me.PictureBox219.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox219.TabIndex = 104
+        Me.PictureBox219.TabStop = False
+        '
+        'PictureBox215
+        '
+        Me.PictureBox215.Location = New System.Drawing.Point(32, 0)
+        Me.PictureBox215.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox215.Name = "PictureBox215"
+        Me.PictureBox215.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox215.TabIndex = 103
+        Me.PictureBox215.TabStop = False
+        '
+        'PictureBox211
+        '
+        Me.PictureBox211.Location = New System.Drawing.Point(0, 128)
+        Me.PictureBox211.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox211.Name = "PictureBox211"
+        Me.PictureBox211.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox211.TabIndex = 102
+        Me.PictureBox211.TabStop = False
+        '
+        'PictureBox208
+        '
+        Me.PictureBox208.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox208.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox208.Name = "PictureBox208"
+        Me.PictureBox208.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox208.TabIndex = 101
+        Me.PictureBox208.TabStop = False
+        '
+        'PictureBox195
+        '
+        Me.PictureBox195.Location = New System.Drawing.Point(0, 32)
+        Me.PictureBox195.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox195.Name = "PictureBox195"
+        Me.PictureBox195.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox195.TabIndex = 100
+        Me.PictureBox195.TabStop = False
+        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 4
@@ -620,6 +736,105 @@ Partial Class Form2
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(99, 128)
         Me.TableLayoutPanel2.TabIndex = 17
         '
+        'PictureBox218
+        '
+        Me.PictureBox218.Location = New System.Drawing.Point(64, 96)
+        Me.PictureBox218.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox218.Name = "PictureBox218"
+        Me.PictureBox218.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox218.TabIndex = 113
+        Me.PictureBox218.TabStop = False
+        '
+        'PictureBox217
+        '
+        Me.PictureBox217.Location = New System.Drawing.Point(32, 96)
+        Me.PictureBox217.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox217.Name = "PictureBox217"
+        Me.PictureBox217.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox217.TabIndex = 112
+        Me.PictureBox217.TabStop = False
+        '
+        'PictureBox216
+        '
+        Me.PictureBox216.Location = New System.Drawing.Point(0, 96)
+        Me.PictureBox216.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox216.Name = "PictureBox216"
+        Me.PictureBox216.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox216.TabIndex = 111
+        Me.PictureBox216.TabStop = False
+        '
+        'PictureBox214
+        '
+        Me.PictureBox214.Location = New System.Drawing.Point(64, 64)
+        Me.PictureBox214.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox214.Name = "PictureBox214"
+        Me.PictureBox214.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox214.TabIndex = 109
+        Me.PictureBox214.TabStop = False
+        '
+        'PictureBox213
+        '
+        Me.PictureBox213.Location = New System.Drawing.Point(32, 64)
+        Me.PictureBox213.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox213.Name = "PictureBox213"
+        Me.PictureBox213.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox213.TabIndex = 108
+        Me.PictureBox213.TabStop = False
+        '
+        'PictureBox212
+        '
+        Me.PictureBox212.Location = New System.Drawing.Point(0, 64)
+        Me.PictureBox212.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox212.Name = "PictureBox212"
+        Me.PictureBox212.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox212.TabIndex = 107
+        Me.PictureBox212.TabStop = False
+        '
+        'PictureBox210
+        '
+        Me.PictureBox210.Location = New System.Drawing.Point(64, 32)
+        Me.PictureBox210.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox210.Name = "PictureBox210"
+        Me.PictureBox210.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox210.TabIndex = 105
+        Me.PictureBox210.TabStop = False
+        '
+        'PictureBox209
+        '
+        Me.PictureBox209.Location = New System.Drawing.Point(32, 32)
+        Me.PictureBox209.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox209.Name = "PictureBox209"
+        Me.PictureBox209.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox209.TabIndex = 104
+        Me.PictureBox209.TabStop = False
+        '
+        'PictureBox206
+        '
+        Me.PictureBox206.Location = New System.Drawing.Point(64, 0)
+        Me.PictureBox206.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox206.Name = "PictureBox206"
+        Me.PictureBox206.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox206.TabIndex = 101
+        Me.PictureBox206.TabStop = False
+        '
+        'PictureBox199
+        '
+        Me.PictureBox199.Location = New System.Drawing.Point(32, 0)
+        Me.PictureBox199.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox199.Name = "PictureBox199"
+        Me.PictureBox199.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox199.TabIndex = 100
+        Me.PictureBox199.TabStop = False
+        '
+        'PictureBox207
+        '
+        Me.PictureBox207.Location = New System.Drawing.Point(0, 32)
+        Me.PictureBox207.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox207.Name = "PictureBox207"
+        Me.PictureBox207.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox207.TabIndex = 102
+        Me.PictureBox207.TabStop = False
+        '
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 4
@@ -650,6 +865,114 @@ Partial Class Form2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(99, 128)
         Me.TableLayoutPanel3.TabIndex = 18
+        '
+        'PictureBox204
+        '
+        Me.PictureBox204.Location = New System.Drawing.Point(32, 96)
+        Me.PictureBox204.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox204.Name = "PictureBox204"
+        Me.PictureBox204.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox204.TabIndex = 100
+        Me.PictureBox204.TabStop = False
+        '
+        'PictureBox203
+        '
+        Me.PictureBox203.Location = New System.Drawing.Point(64, 64)
+        Me.PictureBox203.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox203.Name = "PictureBox203"
+        Me.PictureBox203.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox203.TabIndex = 110
+        Me.PictureBox203.TabStop = False
+        '
+        'PictureBox202
+        '
+        Me.PictureBox202.Location = New System.Drawing.Point(32, 64)
+        Me.PictureBox202.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox202.Name = "PictureBox202"
+        Me.PictureBox202.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox202.TabIndex = 109
+        Me.PictureBox202.TabStop = False
+        '
+        'PictureBox201
+        '
+        Me.PictureBox201.Location = New System.Drawing.Point(0, 64)
+        Me.PictureBox201.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox201.Name = "PictureBox201"
+        Me.PictureBox201.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox201.TabIndex = 108
+        Me.PictureBox201.TabStop = False
+        '
+        'PictureBox198
+        '
+        Me.PictureBox198.Location = New System.Drawing.Point(64, 32)
+        Me.PictureBox198.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox198.Name = "PictureBox198"
+        Me.PictureBox198.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox198.TabIndex = 106
+        Me.PictureBox198.TabStop = False
+        '
+        'PictureBox197
+        '
+        Me.PictureBox197.Location = New System.Drawing.Point(32, 32)
+        Me.PictureBox197.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox197.Name = "PictureBox197"
+        Me.PictureBox197.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox197.TabIndex = 105
+        Me.PictureBox197.TabStop = False
+        '
+        'PictureBox196
+        '
+        Me.PictureBox196.Location = New System.Drawing.Point(0, 32)
+        Me.PictureBox196.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox196.Name = "PictureBox196"
+        Me.PictureBox196.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox196.TabIndex = 104
+        Me.PictureBox196.TabStop = False
+        '
+        'PictureBox194
+        '
+        Me.PictureBox194.Location = New System.Drawing.Point(64, 0)
+        Me.PictureBox194.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox194.Name = "PictureBox194"
+        Me.PictureBox194.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox194.TabIndex = 102
+        Me.PictureBox194.TabStop = False
+        '
+        'PictureBox193
+        '
+        Me.PictureBox193.Location = New System.Drawing.Point(32, 0)
+        Me.PictureBox193.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox193.Name = "PictureBox193"
+        Me.PictureBox193.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox193.TabIndex = 101
+        Me.PictureBox193.TabStop = False
+        '
+        'PictureBox192
+        '
+        Me.PictureBox192.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox192.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox192.Name = "PictureBox192"
+        Me.PictureBox192.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox192.TabIndex = 100
+        Me.PictureBox192.TabStop = False
+        '
+        'PictureBox191
+        '
+        Me.PictureBox191.Location = New System.Drawing.Point(0, 96)
+        Me.PictureBox191.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox191.Name = "PictureBox191"
+        Me.PictureBox191.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox191.TabIndex = 99
+        Me.PictureBox191.TabStop = False
+        '
+        'PictureBox205
+        '
+        Me.PictureBox205.Location = New System.Drawing.Point(64, 96)
+        Me.PictureBox205.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox205.Name = "PictureBox205"
+        Me.PictureBox205.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox205.TabIndex = 111
+        Me.PictureBox205.TabStop = False
         '
         'TableLayoutPanel4
         '
@@ -2884,343 +3207,21 @@ Partial Class Form2
         Me.PictureBox1.TabIndex = 185
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox204
-        '
-        Me.PictureBox204.Location = New System.Drawing.Point(32, 96)
-        Me.PictureBox204.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox204.Name = "PictureBox204"
-        Me.PictureBox204.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox204.TabIndex = 100
-        Me.PictureBox204.TabStop = False
-        '
-        'PictureBox203
-        '
-        Me.PictureBox203.Location = New System.Drawing.Point(64, 64)
-        Me.PictureBox203.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox203.Name = "PictureBox203"
-        Me.PictureBox203.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox203.TabIndex = 110
-        Me.PictureBox203.TabStop = False
-        '
-        'PictureBox202
-        '
-        Me.PictureBox202.Location = New System.Drawing.Point(32, 64)
-        Me.PictureBox202.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox202.Name = "PictureBox202"
-        Me.PictureBox202.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox202.TabIndex = 109
-        Me.PictureBox202.TabStop = False
-        '
-        'PictureBox201
-        '
-        Me.PictureBox201.Location = New System.Drawing.Point(0, 64)
-        Me.PictureBox201.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox201.Name = "PictureBox201"
-        Me.PictureBox201.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox201.TabIndex = 108
-        Me.PictureBox201.TabStop = False
-        '
-        'PictureBox198
-        '
-        Me.PictureBox198.Location = New System.Drawing.Point(64, 32)
-        Me.PictureBox198.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox198.Name = "PictureBox198"
-        Me.PictureBox198.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox198.TabIndex = 106
-        Me.PictureBox198.TabStop = False
-        '
-        'PictureBox197
-        '
-        Me.PictureBox197.Location = New System.Drawing.Point(32, 32)
-        Me.PictureBox197.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox197.Name = "PictureBox197"
-        Me.PictureBox197.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox197.TabIndex = 105
-        Me.PictureBox197.TabStop = False
-        '
-        'PictureBox196
-        '
-        Me.PictureBox196.Location = New System.Drawing.Point(0, 32)
-        Me.PictureBox196.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox196.Name = "PictureBox196"
-        Me.PictureBox196.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox196.TabIndex = 104
-        Me.PictureBox196.TabStop = False
-        '
-        'PictureBox194
-        '
-        Me.PictureBox194.Location = New System.Drawing.Point(64, 0)
-        Me.PictureBox194.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox194.Name = "PictureBox194"
-        Me.PictureBox194.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox194.TabIndex = 102
-        Me.PictureBox194.TabStop = False
-        '
-        'PictureBox193
-        '
-        Me.PictureBox193.Location = New System.Drawing.Point(32, 0)
-        Me.PictureBox193.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox193.Name = "PictureBox193"
-        Me.PictureBox193.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox193.TabIndex = 101
-        Me.PictureBox193.TabStop = False
-        '
-        'PictureBox192
-        '
-        Me.PictureBox192.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox192.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox192.Name = "PictureBox192"
-        Me.PictureBox192.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox192.TabIndex = 100
-        Me.PictureBox192.TabStop = False
-        '
-        'PictureBox191
-        '
-        Me.PictureBox191.Location = New System.Drawing.Point(0, 96)
-        Me.PictureBox191.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox191.Name = "PictureBox191"
-        Me.PictureBox191.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox191.TabIndex = 99
-        Me.PictureBox191.TabStop = False
-        '
-        'PictureBox205
-        '
-        Me.PictureBox205.Location = New System.Drawing.Point(64, 96)
-        Me.PictureBox205.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox205.Name = "PictureBox205"
-        Me.PictureBox205.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox205.TabIndex = 111
-        Me.PictureBox205.TabStop = False
-        '
-        'PictureBox218
-        '
-        Me.PictureBox218.Location = New System.Drawing.Point(64, 96)
-        Me.PictureBox218.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox218.Name = "PictureBox218"
-        Me.PictureBox218.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox218.TabIndex = 113
-        Me.PictureBox218.TabStop = False
-        '
-        'PictureBox217
-        '
-        Me.PictureBox217.Location = New System.Drawing.Point(32, 96)
-        Me.PictureBox217.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox217.Name = "PictureBox217"
-        Me.PictureBox217.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox217.TabIndex = 112
-        Me.PictureBox217.TabStop = False
-        '
-        'PictureBox216
-        '
-        Me.PictureBox216.Location = New System.Drawing.Point(0, 96)
-        Me.PictureBox216.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox216.Name = "PictureBox216"
-        Me.PictureBox216.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox216.TabIndex = 111
-        Me.PictureBox216.TabStop = False
-        '
-        'PictureBox214
-        '
-        Me.PictureBox214.Location = New System.Drawing.Point(64, 64)
-        Me.PictureBox214.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox214.Name = "PictureBox214"
-        Me.PictureBox214.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox214.TabIndex = 109
-        Me.PictureBox214.TabStop = False
-        '
-        'PictureBox213
-        '
-        Me.PictureBox213.Location = New System.Drawing.Point(32, 64)
-        Me.PictureBox213.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox213.Name = "PictureBox213"
-        Me.PictureBox213.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox213.TabIndex = 108
-        Me.PictureBox213.TabStop = False
-        '
-        'PictureBox212
-        '
-        Me.PictureBox212.Location = New System.Drawing.Point(0, 64)
-        Me.PictureBox212.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox212.Name = "PictureBox212"
-        Me.PictureBox212.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox212.TabIndex = 107
-        Me.PictureBox212.TabStop = False
-        '
-        'PictureBox210
-        '
-        Me.PictureBox210.Location = New System.Drawing.Point(64, 32)
-        Me.PictureBox210.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox210.Name = "PictureBox210"
-        Me.PictureBox210.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox210.TabIndex = 105
-        Me.PictureBox210.TabStop = False
-        '
-        'PictureBox209
-        '
-        Me.PictureBox209.Location = New System.Drawing.Point(32, 32)
-        Me.PictureBox209.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox209.Name = "PictureBox209"
-        Me.PictureBox209.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox209.TabIndex = 104
-        Me.PictureBox209.TabStop = False
-        '
-        'PictureBox206
-        '
-        Me.PictureBox206.Location = New System.Drawing.Point(64, 0)
-        Me.PictureBox206.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox206.Name = "PictureBox206"
-        Me.PictureBox206.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox206.TabIndex = 101
-        Me.PictureBox206.TabStop = False
-        '
-        'PictureBox199
-        '
-        Me.PictureBox199.Location = New System.Drawing.Point(32, 0)
-        Me.PictureBox199.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox199.Name = "PictureBox199"
-        Me.PictureBox199.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox199.TabIndex = 100
-        Me.PictureBox199.TabStop = False
-        '
-        'PictureBox207
-        '
-        Me.PictureBox207.Location = New System.Drawing.Point(0, 32)
-        Me.PictureBox207.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox207.Name = "PictureBox207"
-        Me.PictureBox207.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox207.TabIndex = 102
-        Me.PictureBox207.TabStop = False
-        '
-        'PictureBox230
-        '
-        Me.PictureBox230.Location = New System.Drawing.Point(64, 96)
-        Me.PictureBox230.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox230.Name = "PictureBox230"
-        Me.PictureBox230.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox230.TabIndex = 115
-        Me.PictureBox230.TabStop = False
-        '
-        'PictureBox229
-        '
-        Me.PictureBox229.Location = New System.Drawing.Point(32, 96)
-        Me.PictureBox229.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox229.Name = "PictureBox229"
-        Me.PictureBox229.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox229.TabIndex = 114
-        Me.PictureBox229.TabStop = False
-        '
-        'PictureBox228
-        '
-        Me.PictureBox228.Location = New System.Drawing.Point(0, 96)
-        Me.PictureBox228.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox228.Name = "PictureBox228"
-        Me.PictureBox228.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox228.TabIndex = 113
-        Me.PictureBox228.TabStop = False
-        '
-        'PictureBox226
-        '
-        Me.PictureBox226.Location = New System.Drawing.Point(64, 64)
-        Me.PictureBox226.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox226.Name = "PictureBox226"
-        Me.PictureBox226.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox226.TabIndex = 111
-        Me.PictureBox226.TabStop = False
-        '
-        'PictureBox225
-        '
-        Me.PictureBox225.Location = New System.Drawing.Point(32, 64)
-        Me.PictureBox225.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox225.Name = "PictureBox225"
-        Me.PictureBox225.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox225.TabIndex = 110
-        Me.PictureBox225.TabStop = False
-        '
-        'PictureBox224
-        '
-        Me.PictureBox224.Location = New System.Drawing.Point(0, 64)
-        Me.PictureBox224.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox224.Name = "PictureBox224"
-        Me.PictureBox224.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox224.TabIndex = 109
-        Me.PictureBox224.TabStop = False
-        '
-        'PictureBox222
-        '
-        Me.PictureBox222.Location = New System.Drawing.Point(64, 32)
-        Me.PictureBox222.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox222.Name = "PictureBox222"
-        Me.PictureBox222.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox222.TabIndex = 107
-        Me.PictureBox222.TabStop = False
-        '
-        'PictureBox221
-        '
-        Me.PictureBox221.Location = New System.Drawing.Point(32, 32)
-        Me.PictureBox221.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox221.Name = "PictureBox221"
-        Me.PictureBox221.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox221.TabIndex = 106
-        Me.PictureBox221.TabStop = False
-        '
-        'PictureBox219
-        '
-        Me.PictureBox219.Location = New System.Drawing.Point(64, 0)
-        Me.PictureBox219.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox219.Name = "PictureBox219"
-        Me.PictureBox219.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox219.TabIndex = 104
-        Me.PictureBox219.TabStop = False
-        '
-        'PictureBox215
-        '
-        Me.PictureBox215.Location = New System.Drawing.Point(32, 0)
-        Me.PictureBox215.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox215.Name = "PictureBox215"
-        Me.PictureBox215.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox215.TabIndex = 103
-        Me.PictureBox215.TabStop = False
-        '
-        'PictureBox211
-        '
-        Me.PictureBox211.Location = New System.Drawing.Point(0, 128)
-        Me.PictureBox211.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox211.Name = "PictureBox211"
-        Me.PictureBox211.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox211.TabIndex = 102
-        Me.PictureBox211.TabStop = False
-        '
-        'PictureBox208
-        '
-        Me.PictureBox208.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox208.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox208.Name = "PictureBox208"
-        Me.PictureBox208.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox208.TabIndex = 101
-        Me.PictureBox208.TabStop = False
-        '
-        'PictureBox195
-        '
-        Me.PictureBox195.Location = New System.Drawing.Point(0, 32)
-        Me.PictureBox195.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox195.Name = "PictureBox195"
-        Me.PictureBox195.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox195.TabIndex = 100
-        Me.PictureBox195.TabStop = False
-        '
-        'PictureBox200
-        '
-        Me.PictureBox200.Location = New System.Drawing.Point(48, 382)
-        Me.PictureBox200.Name = "PictureBox200"
-        Me.PictureBox200.Size = New System.Drawing.Size(82, 50)
-        Me.PictureBox200.TabIndex = 2
-        Me.PictureBox200.TabStop = False
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(67, 364)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 186
+        Me.Label4.Text = "Label4"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(684, 734)
+        Me.ClientSize = New System.Drawing.Size(684, 733)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TableLayoutPanel4)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.TableLayoutPanel3)
@@ -3230,12 +3231,47 @@ Partial Class Form2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox200)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.TableLayoutPanel5.ResumeLayout(False)
+        CType(Me.PictureBox230, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox229, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox228, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox226, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox225, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox224, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox222, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox221, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox219, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox215, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox211, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox208, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox195, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
+        CType(Me.PictureBox218, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox217, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox216, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox214, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox213, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox212, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox210, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox209, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox206, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox199, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox207, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
+        CType(Me.PictureBox204, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox203, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox202, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox201, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox198, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox197, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox196, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox194, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox193, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox192, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox191, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox205, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox237, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3437,48 +3473,10 @@ Partial Class Form2
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox204, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox203, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox202, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox201, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox198, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox197, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox196, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox194, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox193, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox192, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox191, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox205, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox218, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox217, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox216, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox214, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox213, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox212, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox210, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox209, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox206, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox199, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox207, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox230, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox229, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox228, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox226, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox225, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox224, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox222, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox221, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox219, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox215, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox211, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox208, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox195, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox200, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox200 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -3724,4 +3722,5 @@ Partial Class Form2
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents Label4 As Label
 End Class

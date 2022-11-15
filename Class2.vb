@@ -28,12 +28,13 @@ Public Enum BlockType As Integer
     ZBlock
     PlusBlock
     BruhBlock
+    Cascoblock
 End Enum
 Public Class GameGrid
     Public matrix(20, 10) As Integer
     Public columns = 10
     Public rows = 20
-    Public level As Integer
+    Public clearedRows As Integer
 
 
     Function inBounds(myPoint As Point) As Boolean
@@ -54,6 +55,7 @@ Public Class GameGrid
     Function isRowEmpty(row As Integer) As Boolean
         For i As Integer = 0 To (columns - 1)
             If Not matrix(row, i).Equals(0) Then
+
                 Return False
             End If
         Next
@@ -80,20 +82,24 @@ Public Class GameGrid
     Sub clearRows()
         Dim clearedRows = 0
         Dim curRow = rows - 1
-        While isRowEmpty(curRow) = False
+        While Not isRowEmpty(curRow)
             If isRowFull(curRow) Then
                 emptyRow(curRow)
                 clearedRows = clearedRows + 1
             Else
                 For i As Integer = 0 To (columns - 1)
-                    matrix(curRow - clearedRows, i) = matrix(curRow, i)
+                    matrix(curRow + clearedRows, i) = matrix(curRow, i)
                 Next
             End If
             curRow = curRow - 1
         End While
-        If clearedRows Mod 10 = 0 Then
-            level = level + 1
-        End If
+        For i As Integer = curRow + 1 To (curRow + clearedRows)
+            emptyRow(i)
+
+
+
+        Next
+        Me.clearedRows += clearedRows
     End Sub
 
 End Class
@@ -113,8 +119,8 @@ Public Class Block
         rotation = 0
         'randomize
         Static Dim gen As System.Random = New System.Random()
-        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock, BlockType.BruhBlock}
-        Me.type = typeArray(gen.Next(0, 8))
+        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock, BlockType.BruhBlock, BlockType.Cascoblock}
+        Me.type = typeArray(gen.Next(0, 10))
         Select Case type
             Case BlockType.IBlock
                 tiles = {
@@ -206,12 +212,22 @@ Public Class Block
                 tileCount = 4
                 Me.color = 4
                 spawnOffset = New Point(0, 0)
+            Case BlockType.CascoBlock
+                tiles = {
+                            {New Point(0, 0), New Point(1, 0), New Point(0, 1), New Point(0, 2), New Point(1, 2)},
+                            {New Point(0, 0), New Point(0, 1), New Point(1, 1), New Point(2, 1), New Point(2, 0)},
+                            {New Point(0, 0), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(0, 2)},
+                            {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(2, 0), New Point(2, 1)}
+                        }
+                tileCount = 5
+                Me.color = 4
+                spawnOffset = New Point(0, 0)
         End Select
         position.X = spawnPos.X + spawnOffset.X
         position.Y = spawnPos.Y + spawnOffset.Y
     End Sub
 
-    
+
 
     Sub New(ByRef source As Block)
         Me.color = source.color
@@ -254,6 +270,13 @@ End Class
 
 Class BlockQueue
     Public queue As New List(Of Block)
+
+
+
+
+
+
+
 
     Sub New()
         queue.Add(New Block())

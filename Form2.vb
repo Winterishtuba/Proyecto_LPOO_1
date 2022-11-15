@@ -4,11 +4,13 @@ Public Class Form2
     Private Sub TimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
         Game.moveDown()
         Dibujo()
+
+
     End Sub
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
         Dim timer As Timer = New Timer()
-        timer.Interval = (1000 - Game.grid.level * 40 + 40)
+        timer.Interval = 1000
         AddHandler timer.Elapsed, AddressOf TimerEvent
         timer.AutoReset = True
         timer.Enabled = True
@@ -75,6 +77,8 @@ Public Class Form2
                 Game.rotateClockwise()
             Case Keys.M
                 Game.rotateClockwise()
+            Case Keys.Space
+                Game.jumpDown()
         End Select
         Dibujo()
     End Sub
