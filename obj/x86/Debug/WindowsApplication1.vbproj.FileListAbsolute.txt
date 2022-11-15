@@ -112,3 +112,17 @@ C:\Users\cazan\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplicati
 C:\Users\cazan\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
 C:\Users\cazan\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
 C:\Users\cazan\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+E:\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+E:\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+E:\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form3.resources
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Alumno\Desktop\Proyectoxd\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache

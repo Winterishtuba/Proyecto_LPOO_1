@@ -38,9 +38,9 @@ Public Class Form2
         Fichas(2) = "assets\bsq.png"
         Fichas(3) = "assets\ysq.png"
         Fichas(4) = "assets\psq.png"
-        Fichas(5) = "assets\lbsq.png"
-        Fichas(6) = "assets\osq.png"
-        Fichas(7) = "assets\gsq.png"
+        Fichas(5) = "assets\osq.png"
+        Fichas(6) = "assets\gsq.png"
+        Fichas(7) = "assets\lbsq.png"
 
 
         For i As Integer = 0 To (Game.grid.rows - 1)
@@ -71,6 +71,10 @@ Public Class Form2
                 Game.moveLeft()
             Case Keys.Down
                 Game.moveDown()
+            Case Keys.Up
+                Game.rotateClockwise()
+            Case Keys.M
+                Game.rotateClockwise()
         End Select
         Dibujo()
     End Sub

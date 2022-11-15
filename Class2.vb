@@ -12,6 +12,10 @@ Public Enum BlockColor As Integer
     Blue
     Yellow
     Purple
+    orange
+    green
+    light_blue
+
 End Enum
 
 Public Enum BlockType As Integer
@@ -30,6 +34,7 @@ Public Class GameGrid
     Public columns = 10
     Public rows = 20
     Public level As Integer
+
 
     Function inBounds(myPoint As Point) As Boolean
         Return (0 <= myPoint.X And myPoint.X < rows) And (0 <= myPoint.Y And myPoint.Y < columns)
@@ -60,6 +65,7 @@ Public Class GameGrid
             If matrix(row, i).Equals(0) Then
                 Return False
             End If
+
         Next
         Return True
     End Function
@@ -73,8 +79,8 @@ Public Class GameGrid
 
     Sub clearRows()
         Dim clearedRows = 0
-        Dim curRow = 0
-        While Not isRowEmpty(curRow)
+        Dim curRow = rows - 1
+        While isRowEmpty(curRow) = False
             If isRowFull(curRow) Then
                 emptyRow(curRow)
                 clearedRows = clearedRows + 1
@@ -83,7 +89,7 @@ Public Class GameGrid
                     matrix(curRow - clearedRows, i) = matrix(curRow, i)
                 Next
             End If
-            curRow = curRow + 1
+            curRow = curRow - 1
         End While
         If clearedRows Mod 10 = 0 Then
             level = level + 1
@@ -108,9 +114,7 @@ Public Class Block
         'randomize
         Static Dim gen As System.Random = New System.Random()
         Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock, BlockType.BruhBlock}
-        Dim colorArray = {BlockColor.Red, BlockColor.Blue, BlockColor.Yellow, BlockColor.Purple}
-        Me.type = typeArray(gen.Next(0, 9))
-        Me.color = colorArray(gen.Next(1, 4))
+        Me.type = typeArray(gen.Next(0, 8))
         Select Case type
             Case BlockType.IBlock
                 tiles = {
@@ -119,6 +123,7 @@ Public Class Block
                             {New Point(2, 0), New Point(2, 1), New Point(2, 2), New Point(2, 3)},
                             {New Point(0, 1), New Point(1, 1), New Point(2, 1), New Point(3, 1)}
                            }
+                Me.color = 7
                 tileCount = 4
                 spawnOffset = New Point(0, 1)
             Case BlockType.OBlock
@@ -128,6 +133,7 @@ Public Class Block
                             {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)},
                             {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)}
                         }
+                Me.color = 3
                 tileCount = 4
                 spawnOffset = New Point(0, 0)
             Case BlockType.JBlock
@@ -138,6 +144,7 @@ Public Class Block
                             {New Point(0, 1), New Point(1, 1), New Point(2, 0), New Point(2, 1)}
                         }
                 tileCount = 4
+                Me.color = 2
                 spawnOffset = New Point(0, 0)
             Case BlockType.LBlock
                 tiles = {
@@ -148,6 +155,7 @@ Public Class Block
                         }
                 tileCount = 4
                 spawnOffset = New Point(0, 0)
+                Me.color = 5
             Case BlockType.SBlock
                 tiles = {
                             {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(1, 1)},
@@ -156,6 +164,7 @@ Public Class Block
                             {New Point(0, 0), New Point(1, 0), New Point(1, 1), New Point(2, 1)}
                         }
                 tileCount = 4
+                Me.color = 6
                 spawnOffset = New Point(0, 0)
             Case BlockType.TBlock
                 tiles = {
@@ -166,6 +175,7 @@ Public Class Block
                         }
                 tileCount = 4
                 spawnOffset = New Point(0, 0)
+                Me.color = 4
             Case BlockType.ZBlock
                 tiles = {
                             {New Point(0, 0), New Point(0, 1), New Point(1, 1), New Point(1, 2)},
@@ -175,6 +185,7 @@ Public Class Block
                         }
                 tileCount = 4
                 spawnOffset = New Point(0, 0)
+                Me.color = 1
             Case BlockType.PlusBlock
                 tiles = {
                             {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
@@ -183,6 +194,7 @@ Public Class Block
                             {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)}
                         }
                 tileCount = 5
+                Me.color = 4
                 spawnOffset = New Point(0, 0)
             Case BlockType.BruhBlock
                 tiles = {
@@ -192,110 +204,14 @@ Public Class Block
                             {New Point(0, 2), New Point(1, 2), New Point(2, 0), New Point(2, 1)}
                         }
                 tileCount = 4
+                Me.color = 4
                 spawnOffset = New Point(0, 0)
         End Select
         position.X = spawnPos.X + spawnOffset.X
         position.Y = spawnPos.Y + spawnOffset.Y
     End Sub
 
-    Sub New(ByVal type As BlockType)
-        rotation = 0
-        'randomize
-        Static Dim gen As System.Random = New System.Random()
-        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock}
-        Dim colorArray = {BlockColor.Red, BlockColor.Blue, BlockColor.Yellow, BlockColor.Purple}
-        Do
-            Me.type = typeArray(gen.Next(0, 8))
-        Loop While Me.type = type
-
-        Me.color = colorArray(gen.Next(1, 4))
-        Me.type = type
-        Select Case type
-            Case BlockType.IBlock
-                tiles = {
-                            {New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(1, 3)},
-                            {New Point(0, 2), New Point(1, 2), New Point(2, 2), New Point(3, 2)},
-                            {New Point(2, 0), New Point(2, 1), New Point(2, 2), New Point(2, 3)},
-                            {New Point(0, 1), New Point(1, 1), New Point(2, 1), New Point(3, 1)}
-                           }
-                tileCount = 4
-                spawnOffset = New Point(0, 1)
-            Case BlockType.OBlock
-                tiles = {
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)},
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)},
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)},
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 0), New Point(1, 1)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-            Case BlockType.JBlock
-                tiles = {
-                            {New Point(0, 0), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
-                            {New Point(0, 1), New Point(0, 2), New Point(1, 1), New Point(2, 1)},
-                            {New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 2)},
-                            {New Point(0, 1), New Point(1, 1), New Point(2, 0), New Point(2, 1)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-            Case BlockType.LBlock
-                tiles = {
-                            {New Point(0, 2), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
-                            {New Point(0, 1), New Point(1, 1), New Point(2, 1), New Point(2, 2)},
-                            {New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 0)},
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 1), New Point(2, 1)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-            Case BlockType.SBlock
-                tiles = {
-                            {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(1, 1)},
-                            {New Point(0, 1), New Point(1, 1), New Point(1, 2), New Point(2, 2)},
-                            {New Point(1, 1), New Point(1, 2), New Point(2, 0), New Point(2, 1)},
-                            {New Point(0, 0), New Point(1, 0), New Point(1, 1), New Point(2, 1)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-            Case BlockType.TBlock
-                tiles = {
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2)},
-                            {New Point(0, 1), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(2, 1)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-            Case BlockType.ZBlock
-                tiles = {
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 1), New Point(1, 2)},
-                            {New Point(0, 2), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(1, 0), New Point(1, 1), New Point(2, 1), New Point(2, 2)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(2, 0)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-            Case BlockType.PlusBlock
-                tiles = {
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)}
-                        }
-                tileCount = 5
-                spawnOffset = New Point(0, 0)
-            Case BlockType.BruhBlock
-                tiles = {
-                            {New Point(0, 0), New Point(1, 0), New Point(2, 1), New Point(2, 2)},
-                            {New Point(0, 1), New Point(0, 2), New Point(1, 0), New Point(2, 0)},
-                            {New Point(0, 0), New Point(0, 1), New Point(1, 2), New Point(2, 2)},
-                            {New Point(0, 2), New Point(1, 2), New Point(2, 0), New Point(2, 1)}
-                        }
-                tileCount = 4
-                spawnOffset = New Point(0, 0)
-        End Select
-        position.X = spawnPos.X + spawnOffset.X
-        position.Y = spawnPos.Y + spawnOffset.Y
-    End Sub
+    
 
     Sub New(ByRef source As Block)
         Me.color = source.color
@@ -338,19 +254,13 @@ End Class
 
 Class BlockQueue
     Public queue As New List(Of Block)
-    Public lastType As BlockType
+
     Sub New()
         queue.Add(New Block())
-        lastType = queue(0).type
-        queue.Add(New Block(lastType))
-        lastType = queue(1).type
-        queue.Add(New Block(lastType))
-        lastType = queue(2).type
     End Sub
     Function nextBlock() As Block
         Dim temp As New Block(queue(0))
-        Dim block As New Block(lastType)
-        lastType = block.type
+        Dim block As New Block()
         queue.RemoveAt(0)
         queue.Add(block)
         Return temp
