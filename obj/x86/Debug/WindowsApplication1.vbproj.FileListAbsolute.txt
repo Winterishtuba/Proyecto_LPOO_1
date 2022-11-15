@@ -139,3 +139,16 @@ C:\Users\alumno\Desktop\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj
 C:\Users\alumno\Desktop\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
 C:\Users\alumno\Desktop\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
 C:\Users\alumno\Desktop\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form1.resources
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form2.resources
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form3.resources
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Resources.resources
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+E:\Ariel\lol\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+E:\Ariel\lol\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
+E:\Ariel\lol\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
+E:\Ariel\lol\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
