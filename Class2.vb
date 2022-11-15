@@ -220,8 +220,6 @@ Public Class Block
                 Me.color = 4
                 spawnOffset = New Point(0, 0)
         End Select
-        position.X = spawnPos.X + spawnOffset.X
-        position.Y = spawnPos.Y + spawnOffset.Y
     End Sub
 
 
@@ -267,15 +265,9 @@ End Class
 
 Class BlockQueue
     Public queue As New List(Of Block)
-
-
-
-
-
-
-
-
     Sub New()
+        queue.Add(New Block())
+        queue.Add(New Block())
         queue.Add(New Block())
     End Sub
     Function nextBlock() As Block
@@ -283,7 +275,11 @@ Class BlockQueue
         Dim block As New Block()
         queue.RemoveAt(0)
         queue.Add(block)
+
+        temp.position.X = temp.spawnPos.X + temp.spawnOffset.X
+        temp.position.Y = temp.spawnPos.Y + temp.spawnOffset.Y
         Return temp
+
     End Function
 
 End Class
