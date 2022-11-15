@@ -46,10 +46,7 @@ Public Class GameGrid
     End Function
 
     Function isValidPos(myPoint As Point) As Boolean
-        If inBounds(myPoint) Then
-            Return isEmpty(myPoint)
-        End If
-        Return False
+        Return inBounds(myPoint) AndAlso isEmpty(myPoint)
     End Function
 
     Function isRowEmpty(row As Integer) As Boolean
@@ -322,7 +319,7 @@ Class GameState
             currentBlock.rotateCounterClockwise()
         End If
         updateGhost()
-    End Sub
+    End Sub 
 
     Sub rotateCounterClockwise()
         currentBlock.rotateCounterClockwise()
