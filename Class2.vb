@@ -26,7 +26,6 @@ Public Enum BlockType As Integer
     TBlock
     SBlock
     ZBlock
-    PlusBlock
     BruhBlock
     Cascoblock
 End Enum
@@ -116,8 +115,8 @@ Public Class Block
         rotation = 0
         'randomize
         Static Dim gen As System.Random = New System.Random()
-        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.PlusBlock, BlockType.BruhBlock, BlockType.Cascoblock}
-        Me.type = typeArray(gen.Next(0, 10))
+        Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.BruhBlock, BlockType.Cascoblock}
+        Me.type = typeArray(gen.Next(0, 9))
         Select Case type
             Case BlockType.IBlock
                 tiles = {
@@ -189,16 +188,6 @@ Public Class Block
                 tileCount = 4
                 spawnOffset = New Point(0, 0)
                 Me.color = 1
-            Case BlockType.PlusBlock
-                tiles = {
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)},
-                            {New Point(0, 1), New Point(1, 0), New Point(1, 1), New Point(1, 2), New Point(2, 1)}
-                        }
-                tileCount = 5
-                Me.color = 4
-                spawnOffset = New Point(0, 0)
             Case BlockType.BruhBlock
                 tiles = {
                             {New Point(0, 0), New Point(1, 0), New Point(2, 1), New Point(2, 2)},
@@ -207,7 +196,7 @@ Public Class Block
                             {New Point(0, 2), New Point(1, 2), New Point(2, 0), New Point(2, 1)}
                         }
                 tileCount = 4
-                Me.color = 4
+                Me.color = 6
                 spawnOffset = New Point(0, 0)
             Case BlockType.CascoBlock
                 tiles = {
@@ -291,6 +280,8 @@ Class GameState
     Public queue As BlockQueue
     Public gameOver As Boolean = False
     Public heldBlock As Block
+    Public level As Integer = 0
+    Public score As Integer = 1000
 
     Sub New()
         queue = New BlockQueue()

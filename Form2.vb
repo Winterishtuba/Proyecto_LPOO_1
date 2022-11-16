@@ -1,19 +1,8 @@
 ﻿Imports System.Timers
 Public Class Form2
     Private Property Game As New GameState
-    Private Sub TimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
-        Game.moveDown()
-        Dibujo()
-    End Sub
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
-        Dim timer As Timer = New Timer()
-        timer.Interval = 1000
-        AddHandler timer.Elapsed, AddressOf TimerEvent
-        timer.AutoReset = True
-        timer.Enabled = True
-
-        Dibujo()
     End Sub
 
 
@@ -28,7 +17,9 @@ Public Class Form2
         Fichas(6) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\gsq.png")
         Fichas(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsq.png")
 
-
+        Label4.Text = Game.level
+        Label5.Text = Game.level
+        Label6.Text = Game.score
         For i As Integer = 0 To (Game.grid.rows - 1)
             For j As Integer = 0 To (Game.grid.columns - 1)
                 Dim color = Game.grid.matrix(i, j)
@@ -94,6 +85,8 @@ Public Class Form2
                 Game.rotateClockwise()
             Case Keys.M
                 Game.rotateClockwise()
+            Case Keys.Space
+                Game.jumpDown()
         End Select
         Dibujo()
     End Sub
@@ -104,5 +97,16 @@ Public Class Form2
 
     Private Sub TableLayoutPanel3_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles TableLayoutPanel3.Paint
 
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Game.level = Game.grid.clearedRows
+        If Game.level > 25 Then
+            Game.level = 25
+        End If
+        Timer1.Interval = (1000 - Game.level * 40 + 40)
+        Timer1.Enabled = True
+        Game.moveDown()
+        Dibujo()
     End Sub
 End Class
