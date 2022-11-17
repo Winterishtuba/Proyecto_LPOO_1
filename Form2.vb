@@ -18,7 +18,7 @@ Public Class Form2
         Fichas(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsq.png")
 
         Label4.Text = Game.level
-        Label5.Text = Game.level
+        Label5.Text = Game.grid.clearedRows
         Label6.Text = Game.score
         For i As Integer = 0 To (Game.grid.rows - 1)
             For j As Integer = 0 To (Game.grid.columns - 1)
@@ -30,7 +30,6 @@ Public Class Form2
                 TryCast(TableLayoutPanel1.GetControlFromPosition(j, i), PictureBox).Image = Image.FromFile(Fichas(color))
             Next
         Next
-
         Dim blockTiles As List(Of Point) = Game.currentBlock.getTiles()
         Dim curBlockPath = System.IO.Path.Combine(My.Application.Info.DirectoryPath, Fichas(Game.currentBlock.color))
         For Each tile In blockTiles
@@ -100,7 +99,6 @@ Public Class Form2
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Game.level = Game.grid.clearedRows
         If Game.level > 25 Then
             Game.level = 25
         End If

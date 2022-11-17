@@ -280,7 +280,7 @@ Class GameState
     Public queue As BlockQueue
     Public gameOver As Boolean = False
     Public heldBlock As Block
-    Public level As Integer = 0
+    Public level As Integer = 1
     Public score As Integer = 1000
 
     Sub New()
@@ -381,6 +381,11 @@ Class GameState
         Next
     End Sub
 
-
+    Function checkLevel()
+        If Me.grid.clearedRows Mod 10 = 0 Then
+            level += 1
+        End If
+        Return level
+    End Function
 
 End Class
