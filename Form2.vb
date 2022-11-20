@@ -19,7 +19,7 @@ Public Class Form2
 
         Label4.Text = Game.level
         Label5.Text = Game.grid.clearedRows
-        Label6.Text = Game.score
+        Label6.Text = Game.grid.score
         For i As Integer = 0 To (Game.grid.rows - 1)
             For j As Integer = 0 To (Game.grid.columns - 1)
                 Dim color = Game.grid.matrix(i, j)
@@ -80,12 +80,14 @@ Public Class Form2
                 Game.moveLeft()
             Case Keys.Down
                 Game.moveDown()
+                Game.grid.score += 1
             Case Keys.Up
                 Game.rotateClockwise()
             Case Keys.M
                 Game.rotateClockwise()
             Case Keys.Space
                 Game.jumpDown()
+                Game.grid.score += 30
         End Select
         Dibujo()
     End Sub
@@ -106,5 +108,9 @@ Public Class Form2
         Timer1.Enabled = True
         Game.moveDown()
         Dibujo()
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
     End Sub
 End Class

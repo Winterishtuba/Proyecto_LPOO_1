@@ -5,7 +5,6 @@ Public Enum BlockRotation As Integer
     deg180
     deg270
 End Enum
-
 Public Enum BlockColor As Integer
     '0 is Nothing
     Red = 1
@@ -34,6 +33,7 @@ Public Class GameGrid
     Public columns = 10
     Public rows = 20
     Public clearedRows As Integer
+    Public score As Integer
 
 
     Function inBounds(myPoint As Point) As Boolean
@@ -82,6 +82,7 @@ Public Class GameGrid
             If isRowFull(curRow) Then
                 emptyRow(curRow)
                 clearedRows = clearedRows + 1
+                score += 100
             Else
                 For i As Integer = 0 To (columns - 1)
                     matrix(curRow + clearedRows, i) = matrix(curRow, i)
@@ -281,7 +282,6 @@ Class GameState
     Public gameOver As Boolean = False
     Public heldBlock As Block
     Public level As Integer = 1
-    Public score As Integer = 1000
 
     Sub New()
         queue = New BlockQueue()
