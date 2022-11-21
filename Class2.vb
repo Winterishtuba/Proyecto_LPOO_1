@@ -34,6 +34,9 @@ Public Class GameGrid
     Public rows = 20
     Public clearedRows As Integer
     Public score As Integer
+    Public highscore As Integer = 0
+    Public filenum As Integer
+
 
 
     Function inBounds(myPoint As Point) As Boolean
@@ -51,10 +54,10 @@ Public Class GameGrid
     Function isRowEmpty(row As Integer) As Boolean
         For i As Integer = 0 To (columns - 1)
             If Not matrix(row, i).Equals(0) Then
-
                 Return False
             End If
         Next
+
         Return True
     End Function
 
@@ -334,6 +337,7 @@ Class GameState
 
     Function isGameOver()
         Return (Not grid.isRowEmpty(0)) And (Not grid.isRowEmpty(1))
+
     End Function
 
     Sub placeBlock()
@@ -343,7 +347,7 @@ Class GameState
         Next
         grid.clearRows()
         If isGameOver() Then
-            gameOver = True
+            gameOver = Form4.ShowDialog()
         Else
             currentBlock = queue.nextBlock()
             updateGhost()
@@ -387,5 +391,6 @@ Class GameState
         End If
         Return level
     End Function
+
 
 End Class

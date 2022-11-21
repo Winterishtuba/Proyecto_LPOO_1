@@ -1,5 +1,6 @@
 ﻿Imports System.Timers
 Public Class Form2
+    Public Property list As Integer
     Private Property Game As New GameState
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
@@ -108,9 +109,15 @@ Public Class Form2
         Timer1.Enabled = True
         Game.moveDown()
         Dibujo()
+
+
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub PictureBox36_Click(sender As Object, e As EventArgs) Handles PictureBox36.Click
 
     End Sub
 End Class
