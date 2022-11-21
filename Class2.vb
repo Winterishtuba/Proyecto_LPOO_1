@@ -388,4 +388,24 @@ Class GameState
         Return level
     End Function
 
+    Sub actualizacion()
+        Static Dim prim = True
+        If prim = True Then
+            heldBlock = New Block(currentBlock)
+            heldBlock.position.X = 0
+            heldBlock.position.Y = 0
+            currentBlock = queue.nextBlock()
+        Else
+            Dim guardado
+            guardado = New Block(currentBlock)
+            currentBlock = heldBlock
+            currentBlock.position.X = currentBlock.spawnPos.X + currentBlock.spawnOffset.X
+            currentBlock.position.Y = currentBlock.spawnPos.Y + currentBlock.spawnOffset.Y
+            heldBlock = guardado
+            heldBlock.position.X = 0
+            heldBlock.position.Y = 0
+        End If
+        prim = False
+    End Sub
+
 End Class
