@@ -6,6 +6,7 @@ Public Class Form3
 
     End Sub
 
+    Dim Publicpropertylist As List(Of String)
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -13,7 +14,7 @@ Public Class Form3
 
 
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 End Class

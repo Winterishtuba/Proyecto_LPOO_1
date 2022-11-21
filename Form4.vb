@@ -1,7 +1,20 @@
 ﻿Public Class Form4
     Public Property List As New List(Of KeyValuePair(Of String, Integer))
+
+
+    Public Sub recorrer()
+        Dim asd = Function(x As KeyValuePair(Of String, Integer), y As KeyValuePair(Of String, Integer))
+                      If x.Value = y.Value Then Return 0
+                      If x.Value > y.Value Then Return -1
+                      If x.Value < y.Value Then Return 1
+                  End Function
+        List.Sort(asd)
+
+    End Sub
+
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getscore()
+        recorrer()
         insertscoretofile()
     End Sub
 
