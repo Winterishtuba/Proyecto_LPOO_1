@@ -29,11 +29,12 @@ Public Enum BlockType As Integer
     Cascoblock
 End Enum
 Public Class GameGrid
-    Public matrix(20, 10) As Integer
+    Public matrix(21, 10) As Integer
     Public columns = 10
     Public rows = 20
     Public clearedRows As Integer
     Public score As Integer
+    Public level As Integer = 1
 
 
     Function inBounds(myPoint As Point) As Boolean
@@ -51,7 +52,6 @@ Public Class GameGrid
     Function isRowEmpty(row As Integer) As Boolean
         For i As Integer = 0 To (columns - 1)
             If Not matrix(row, i).Equals(0) Then
-
                 Return False
             End If
         Next
@@ -78,6 +78,7 @@ Public Class GameGrid
     Sub clearRows()
         Dim clearedRows = 0
         Dim curRow = rows - 1
+        Dim temp = clearedRows
         While Not isRowEmpty(curRow)
             If isRowFull(curRow) Then
                 emptyRow(curRow)
@@ -92,12 +93,22 @@ Public Class GameGrid
         End While
         For i As Integer = curRow + 1 To (curRow + clearedRows)
             emptyRow(i)
-
-
-
         Next
         Me.clearedRows += clearedRows
+        If clearedRows <> temp Then
+            checkLevel()
+        End If
     End Sub
+
+    Function checkLevel()
+        If clearedRows Mod 10 = 0 Then
+            level += 1
+        End If
+        If level > 25 Then
+            level = 25
+        End If
+        Return level
+    End Function
 
 End Class
 
@@ -253,7 +264,7 @@ Public Class Block
 End Class
 
 
-Class BlockQueue
+Public Class BlockQueue
     Public queue As New List(Of Block)
     Sub New()
         queue.Add(New Block())
@@ -274,14 +285,13 @@ Class BlockQueue
 
 End Class
 
-Class GameState
+Public Class GameState
     Public currentBlock As Block
     Public ghostBlock As Block
     Public grid As GameGrid
     Public queue As BlockQueue
     Public gameOver As Boolean = False
     Public heldBlock As Block
-    Public level As Integer = 1
 
     Sub New()
         queue = New BlockQueue()
@@ -306,7 +316,7 @@ Class GameState
             currentBlock.rotateCounterClockwise()
         End If
         updateGhost()
-    End Sub 
+    End Sub
 
     Sub rotateCounterClockwise()
         currentBlock.rotateCounterClockwise()
@@ -332,22 +342,23 @@ Class GameState
         updateGhost()
     End Sub
 
-    Function isGameOver()
-        Return (Not grid.isRowEmpty(0)) And (Not grid.isRowEmpty(1))
-    End Function
+    Sub isGameOver()
+        For j As Integer = 1 To (grid.columns - 1)
+            If Not (grid.isRowEmpty(0) And grid.isRowEmpty(1) And grid.isRowEmpty(2)) Then
+                gameOver = True
+            End If
+        Next
+    End Sub
 
     Sub placeBlock()
         Dim listOfPos = currentBlock.getTiles()
         For Each point As Point In listOfPos
             grid.matrix(point.X, point.Y) = currentBlock.color
         Next
+        isGameOver()
         grid.clearRows()
-        If isGameOver() Then
-            gameOver = True
-        Else
-            currentBlock = queue.nextBlock()
-            updateGhost()
-        End If
+        currentBlock = queue.nextBlock()
+        updateGhost()
     End Sub
 
     Sub moveDown()
@@ -381,13 +392,6 @@ Class GameState
         Next
     End Sub
 
-    Function checkLevel()
-        If Me.grid.clearedRows Mod 10 = 0 Then
-            level += 1
-        End If
-        Return level
-    End Function
-
     Sub actualizacion()
         Static Dim prim = True
         If prim = True Then
@@ -407,5 +411,4 @@ Class GameState
         End If
         prim = False
     End Sub
-
 End Class

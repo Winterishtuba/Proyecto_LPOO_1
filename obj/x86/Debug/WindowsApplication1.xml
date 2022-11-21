@@ -27,6 +27,11 @@ WindowsApplication1
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:WindowsApplication1.My.Resources.Resources.bobesponja">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:WindowsApplication1.My.Resources.Resources.grid">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
