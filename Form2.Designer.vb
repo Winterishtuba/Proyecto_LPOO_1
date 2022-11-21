@@ -3431,7 +3431,7 @@ Partial Class Form2
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(56, 418)
+        Me.Label6.Location = New System.Drawing.Point(56, 428)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 191
@@ -3442,7 +3442,7 @@ Partial Class Form2
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label7.Location = New System.Drawing.Point(41, 383)
+        Me.Label7.Location = New System.Drawing.Point(41, 393)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(78, 25)
         Me.Label7.TabIndex = 192
@@ -3453,7 +3453,7 @@ Partial Class Form2
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label8.Location = New System.Drawing.Point(41, 324)
+        Me.Label8.Location = New System.Drawing.Point(41, 327)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(70, 25)
         Me.Label8.TabIndex = 193
@@ -3464,7 +3464,7 @@ Partial Class Form2
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label9.Location = New System.Drawing.Point(54, 268)
+        Me.Label9.Location = New System.Drawing.Point(41, 268)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(55, 25)
         Me.Label9.TabIndex = 194

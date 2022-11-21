@@ -3,6 +3,7 @@ Public Class Form2
     Private Property Game As New GameState
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
+        Form1.Hide()
     End Sub
 
 
@@ -17,7 +18,7 @@ Public Class Form2
         Fichas(6) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\gsq.png")
         Fichas(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsq.png")
 
-        Label4.Text = Game.level
+        Label4.Text = Game.grid.level
         Label5.Text = Game.grid.clearedRows
         Label6.Text = Game.grid.score
         For i As Integer = 0 To (Game.grid.rows - 1)
@@ -72,7 +73,9 @@ Public Class Form2
 
     End Sub
     Private Sub Form2_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles Me.KeyDown
-
+        If Game.gameOver = True Then
+            Return
+        End If
         Select Case e.KeyData
             Case Keys.Right
                 Game.moveRight()
@@ -101,16 +104,16 @@ Public Class Form2
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        If Game.level > 25 Then
-            Game.level = 25
-        End If
-        Timer1.Interval = (1000 - Game.level * 40 + 40)
+        Timer1.Interval = (1000 - Game.grid.level * 40 + 40)
         Timer1.Enabled = True
-        Game.moveDown()
-        Dibujo()
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        If Game.gameOver = True Then
+            Timer1.Enabled = False
+            Form4.ShowDialog()
+        End If
+        If Game.gameOver = False Then
+            Game.moveDown()
+            Dibujo()
+        End If
 
     End Sub
 End Class

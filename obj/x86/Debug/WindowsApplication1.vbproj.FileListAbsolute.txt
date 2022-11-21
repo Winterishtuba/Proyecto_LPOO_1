@@ -165,3 +165,4 @@ C:\Users\xoanm\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
 C:\Users\xoanm\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
 C:\Users\xoanm\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
 C:\Users\xoanm\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
+D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form4.resources
