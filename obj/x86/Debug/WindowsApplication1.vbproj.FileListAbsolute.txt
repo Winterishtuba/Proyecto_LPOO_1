@@ -166,3 +166,31 @@ C:\Users\xoanm\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
 C:\Users\xoanm\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
 C:\Users\xoanm\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
 D:\tetris\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form4.resources
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form3.resources
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form4.resources
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\cazan\Desktop\clemente\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\bin\Debug\WindowsApplication1.exe
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\bin\Debug\WindowsApplication1.pdb
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\bin\Debug\WindowsApplication1.xml
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form3.resources
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Form4.resources
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\cazan\Desktop\pushear codigo(importante)\Proyecto_Tetris\obj\x86\Debug\WindowsApplication1.pdb

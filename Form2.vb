@@ -1,9 +1,8 @@
 ﻿Imports System.Timers
 Public Class Form2
-    Private Property Game As New GameState
+    Public Property Game As New GameState
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim myvar = TableLayoutPanel1.GetControlFromPosition(0, 0)
-        Form1.Hide()
     End Sub
 
 
@@ -68,14 +67,44 @@ Public Class Form2
             TryCast(TableLayoutPanel5.GetControlFromPosition(cordenada.Y, cordenada.X), PictureBox).Image = Image.FromFile(Fichas(Game.queue.queue(2).color))
         Next
 
+        Dim Bloquefantasma = Game.ghostBlock.getTiles()
+        Dim Fantasma(7) As String
+        Fantasma(0) = ""
+        Fantasma(1) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\rsqghost.png")
+        Fantasma(2) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\bsqghost.png")
+        Fantasma(3) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\ysqghost.png")
+        Fantasma(4) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\psqghost.png")
+        Fantasma(5) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\osqghost.png")
+        Fantasma(6) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\gsqghost.png")
+        Fantasma(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsqghost.png")
+        For Each imagen In Bloquefantasma
+
+            TryCast(TableLayoutPanel1.GetControlFromPosition(imagen.Y, imagen.X), PictureBox).Image = Image.FromFile(Fantasma(Game.ghostBlock.color))
+        Next
+    End Sub
+    Private Sub Dibujarguardado()
+        Dim Fichas(7) As String
+        Fichas(0) = ""
+        Fichas(1) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\rsq.png")
+        Fichas(2) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\bsq.png")
+        Fichas(3) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\ysq.png")
+        Fichas(4) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\psq.png")
+        Fichas(5) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\osq.png")
+        Fichas(6) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\gsq.png")
+        Fichas(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsq.png")
 
 
 
+        For Each imagen As PictureBox In TableLayoutPanel7.Controls
+            imagen.Image = Nothing
+        Next
+        Dim bloquecordenadas = Game.heldBlock.getTiles()
+        For Each cordenada In bloquecordenadas
+            TryCast(TableLayoutPanel7.GetControlFromPosition(cordenada.Y, cordenada.X), PictureBox).Image = Image.FromFile(Fichas(Game.heldBlock.color))
+        Next
     End Sub
     Private Sub Form2_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles Me.KeyDown
-        If Game.gameOver = True Then
-            Return
-        End If
+
         Select Case e.KeyData
             Case Keys.Right
                 Game.moveRight()
@@ -91,6 +120,9 @@ Public Class Form2
             Case Keys.Space
                 Game.jumpDown()
                 Game.grid.score += 30
+            Case Keys.C
+                Game.actualizacion()
+                Dibujarguardado()
         End Select
         Dibujo()
     End Sub
@@ -116,4 +148,6 @@ Public Class Form2
         End If
 
     End Sub
+
+
 End Class

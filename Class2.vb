@@ -264,7 +264,7 @@ Public Class Block
 End Class
 
 
-Class BlockQueue
+Public Class BlockQueue
     Public queue As New List(Of Block)
     Sub New()
         queue.Add(New Block())
@@ -285,7 +285,7 @@ Class BlockQueue
 
 End Class
 
-Class GameState
+Public Class GameState
     Public currentBlock As Block
     Public ghostBlock As Block
     Public grid As GameGrid
@@ -316,7 +316,7 @@ Class GameState
             currentBlock.rotateCounterClockwise()
         End If
         updateGhost()
-    End Sub 
+    End Sub
 
     Sub rotateCounterClockwise()
         currentBlock.rotateCounterClockwise()
@@ -392,4 +392,23 @@ Class GameState
         Next
     End Sub
 
+    Sub actualizacion()
+        Static Dim prim = True
+        If prim = True Then
+            heldBlock = New Block(currentBlock)
+            heldBlock.position.X = 0
+            heldBlock.position.Y = 0
+            currentBlock = queue.nextBlock()
+        Else
+            Dim guardado
+            guardado = New Block(currentBlock)
+            currentBlock = heldBlock
+            currentBlock.position.X = currentBlock.spawnPos.X + currentBlock.spawnOffset.X
+            currentBlock.position.Y = currentBlock.spawnPos.Y + currentBlock.spawnOffset.Y
+            heldBlock = guardado
+            heldBlock.position.X = 0
+            heldBlock.position.Y = 0
+        End If
+        prim = False
+    End Sub
 End Class

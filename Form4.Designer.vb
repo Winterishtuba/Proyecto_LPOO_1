@@ -29,7 +29,7 @@ Partial Class Form4
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Location = New System.Drawing.Point(21, 98)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(227, 98)
         Me.Button1.TabIndex = 0
@@ -38,7 +38,7 @@ Partial Class Form4
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(285, 12)
+        Me.Button2.Location = New System.Drawing.Point(282, 98)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(227, 98)
         Me.Button2.TabIndex = 1
@@ -47,7 +47,7 @@ Partial Class Form4
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(561, 12)
+        Me.Button3.Location = New System.Drawing.Point(541, 98)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(227, 98)
         Me.Button3.TabIndex = 2
@@ -58,6 +58,7 @@ Partial Class Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.bobesponja
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

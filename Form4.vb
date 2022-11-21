@@ -1,5 +1,8 @@
 ﻿Public Class Form4
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim nombre As String
+        nombre = InputBox("Entrar Nombre", "ingrese su nombre")
+        Form3.recorrer(nombre, Form2.Game.grid.score)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
