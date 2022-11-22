@@ -114,6 +114,7 @@ End Class
 
 Public Class Block
     'X is for rows, Y is for columns 
+    Public Shared Property gen As Random = New Random
     Public spawnPos As New Point(0, 4)
     Public spawnOffset As Point
     Public position As New Point(0, 0)
@@ -125,8 +126,7 @@ Public Class Block
 
     Sub New()
         rotation = 0
-        'randomize
-        Static Dim gen As System.Random = New System.Random()
+        'randomizar
         Dim typeArray = {BlockType.IBlock, BlockType.OBlock, BlockType.LBlock, BlockType.JBlock, BlockType.TBlock, BlockType.SBlock, BlockType.ZBlock, BlockType.BruhBlock, BlockType.Cascoblock}
         Me.type = typeArray(gen.Next(0, 9))
         Select Case type
@@ -223,8 +223,6 @@ Public Class Block
         End Select
     End Sub
 
-
-
     Sub New(ByRef source As Block)
         Me.color = source.color
         Me.position = New Point(source.position)
@@ -267,25 +265,27 @@ End Class
 Public Class BlockQueue
     Public queue As New List(Of Block)
     Sub New()
-        queue.Add(New Block())
-        queue.Add(New Block())
-        queue.Add(New Block())
+     
+            queue.Add(New Block())
+            queue.Add(New Block())
+            queue.Add(New Block())
+
+
     End Sub
     Function nextBlock() As Block
         Dim temp As New Block(queue(0))
         Dim block As New Block()
         queue.RemoveAt(0)
         queue.Add(block)
-
         temp.position.X = temp.spawnPos.X + temp.spawnOffset.X
         temp.position.Y = temp.spawnPos.Y + temp.spawnOffset.Y
         Return temp
-
     End Function
 
 End Class
 
 Public Class GameState
+    Public random As Random
     Public currentBlock As Block
     Public ghostBlock As Block
     Public grid As GameGrid
