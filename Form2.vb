@@ -32,6 +32,20 @@ Public Class Form2
         Next
         Dim blockTiles As List(Of Point) = Game.currentBlock.getTiles()
         Dim curBlockPath = System.IO.Path.Combine(My.Application.Info.DirectoryPath, Fichas(Game.currentBlock.color))
+        Dim Bloquefantasma = Game.ghostBlock.getTiles()
+        Dim Fantasma(7) As String
+        Fantasma(0) = ""
+        Fantasma(1) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\rsqghost.png")
+        Fantasma(2) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\bsqghost.png")
+        Fantasma(3) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\ysqghost.png")
+        Fantasma(4) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\psqghost.png")
+        Fantasma(5) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\osqghost.png")
+        Fantasma(6) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\gsqghost.png")
+        Fantasma(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsqghost.png")
+        For Each imagen In Bloquefantasma
+
+            TryCast(TableLayoutPanel1.GetControlFromPosition(imagen.Y, imagen.X), PictureBox).Image = Image.FromFile(Fantasma(Game.ghostBlock.color))
+        Next
         For Each tile In blockTiles
             TryCast(TableLayoutPanel1.GetControlFromPosition(tile.Y, tile.X), PictureBox).Image = Image.FromFile(curBlockPath)
         Next
@@ -67,20 +81,8 @@ Public Class Form2
             TryCast(TableLayoutPanel5.GetControlFromPosition(cordenada.Y, cordenada.X), PictureBox).Image = Image.FromFile(Fichas(Game.queue.queue(2).color))
         Next
 
-        Dim Bloquefantasma = Game.ghostBlock.getTiles()
-        Dim Fantasma(7) As String
-        Fantasma(0) = ""
-        Fantasma(1) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\rsqghost.png")
-        Fantasma(2) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\bsqghost.png")
-        Fantasma(3) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\ysqghost.png")
-        Fantasma(4) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\psqghost.png")
-        Fantasma(5) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\osqghost.png")
-        Fantasma(6) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\gsqghost.png")
-        Fantasma(7) = System.IO.Path.Combine(My.Application.Info.DirectoryPath, "assets\lbsqghost.png")
-        For Each imagen In Bloquefantasma
 
-            TryCast(TableLayoutPanel1.GetControlFromPosition(imagen.Y, imagen.X), PictureBox).Image = Image.FromFile(Fantasma(Game.ghostBlock.color))
-        Next
+
     End Sub
     Private Sub Dibujarguardado()
         Dim Fichas(7) As String

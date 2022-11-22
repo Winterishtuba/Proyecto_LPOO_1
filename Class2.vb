@@ -292,6 +292,7 @@ Public Class GameState
     Public queue As BlockQueue
     Public gameOver As Boolean = False
     Public heldBlock As Block
+    Public Cambio As Boolean = True
 
     Sub New()
         queue = New BlockQueue()
@@ -358,6 +359,7 @@ Public Class GameState
         isGameOver()
         grid.clearRows()
         currentBlock = queue.nextBlock()
+        Cambio = True
         updateGhost()
     End Sub
 
@@ -393,22 +395,28 @@ Public Class GameState
     End Sub
 
     Sub actualizacion()
-        Static Dim prim = True
-        If prim = True Then
-            heldBlock = New Block(currentBlock)
-            heldBlock.position.X = 0
-            heldBlock.position.Y = 0
-            currentBlock = queue.nextBlock()
-        Else
-            Dim guardado
-            guardado = New Block(currentBlock)
-            currentBlock = heldBlock
-            currentBlock.position.X = currentBlock.spawnPos.X + currentBlock.spawnOffset.X
-            currentBlock.position.Y = currentBlock.spawnPos.Y + currentBlock.spawnOffset.Y
-            heldBlock = guardado
-            heldBlock.position.X = 0
-            heldBlock.position.Y = 0
+        If Cambio Then
+            Cambio = False
+
+
+            Static Dim prim = True
+            If prim = True Then
+                heldBlock = New Block(currentBlock)
+                heldBlock.position.X = 0
+                heldBlock.position.Y = 0
+                currentBlock = queue.nextBlock()
+
+            Else
+                Dim guardado
+                guardado = New Block(currentBlock)
+                currentBlock = heldBlock
+                currentBlock.position.X = currentBlock.spawnPos.X + currentBlock.spawnOffset.X
+                currentBlock.position.Y = currentBlock.spawnPos.Y + currentBlock.spawnOffset.Y
+                heldBlock = guardado
+                heldBlock.position.X = 0
+                heldBlock.position.Y = 0
+            End If
+            prim = False
         End If
-        prim = False
     End Sub
 End Class
