@@ -1,7 +1,11 @@
 ﻿Public Class Form4
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim nombre As String
-        nombre = InputBox("Entrar Nombre", "ingrese su nombre")
+        Dim nombre As String = InputBox("Entrar Nombre", "ingrese su nombre")
+        Do Until nombre.Count() > 0 And nombre.Count < 4
+            MessageBox.Show("perdon pero el limite de caracteres son 3")
+            nombre = InputBox("Entrar Nombre", "ingrese su nombre")
+        Loop
+
         Form3.recorrer(nombre, Form2.Game.grid.score)
     End Sub
 

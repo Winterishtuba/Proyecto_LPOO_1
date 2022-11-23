@@ -1,7 +1,5 @@
-﻿kobol y la concha de tu madre:9131
-:6748
-pintamos toda la casa:4675
-polo:3106
-:1698
-:424
-olo:203
+﻿WIN:9131
+JOW:8199
+CLE:4675
+POL:3106
+WNN:2522
