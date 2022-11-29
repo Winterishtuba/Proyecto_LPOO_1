@@ -31,7 +31,7 @@ End Enum
 Public Class GameGrid
     Public matrix(21, 10) As Integer
     Public columns = 10
-    Public rows = 20
+    Public rows = 21
     Public clearedRows As Integer
     Public score As Integer
     Public level As Integer = 1
@@ -344,11 +344,9 @@ Public Class GameState
     End Sub
 
     Sub isGameOver()
-        For j As Integer = 1 To (grid.columns - 1)
-            If Not (grid.isRowEmpty(0) And grid.isRowEmpty(1) And grid.isRowEmpty(2)) Then
-                gameOver = True
-            End If
-        Next
+        If Not (grid.isRowEmpty(0) And grid.isRowEmpty(1) And grid.isRowEmpty(2)) Then
+            gameOver = True
+        End If
     End Sub
 
     Sub placeBlock()

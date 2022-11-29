@@ -107,6 +107,7 @@ Public Class Form2
     End Sub
     Private Sub Form2_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles Me.KeyDown
 
+        If Game.gameOver = True Then Return
         Select Case e.KeyData
             Case Keys.Right
                 Game.moveRight()
@@ -119,6 +120,7 @@ Public Class Form2
                 Game.rotateClockwise()
             Case Keys.M
                 Game.rotateClockwise()
+
             Case Keys.Space
                 Game.jumpDown()
                 Game.grid.score += 30
